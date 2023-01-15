@@ -1,0 +1,219 @@
+:root{
+    --white-color: #fff;
+    --main-color: #C6B5A8;
+    --sec-color: #7F4B3B;
+    --third-color: #E2D9D3;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'inter-black';
+    src: url('asset/fonts/Inter-Black.woff2');
+}
+@font-face {
+    font-family: 'inter-bold';
+    src: url('asset/fonts/Inter-Bold.woff2');
+}
+@font-face {
+    font-family: 'inter-extra-bold';
+    src: url('asset/fonts/Inter-ExtraBold.woff2');
+}
+@font-face {
+    font-family: 'inter-extra-light';
+    src: url('asset/fonts/Inter-ExtraLight.woff2');
+}
+@font-face {
+    font-family: 'inter-light';
+    src: url('asset/fonts/Inter-Light.woff2');
+}
+@font-face {
+    font-family: 'inter-medium';
+    src: url('asset/fonts/Inter-Medium.woff2');
+}
+@font-face {
+    font-family: 'inter-regular';
+    src: url('asset/fonts/Inter-Regular.woff2');
+}
+@font-face {
+    font-family: 'inter-SemiBold';
+    src: url('asset/fonts/Inter-SemiBold.woff2');
+}
+@font-face {
+    font-family: 'inter-thin';
+    src: url('asset/fonts/Inter-Thin.woff2');
+}
+
+.background-image {
+    z-index: -1;
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+}
+.team-title {
+    font-family: 'inter-extra-bold';
+    font-size: 5.625rem;
+    line-height: 58px;
+    /* text-align: center; */
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.team-info {
+    font-family: 'inter-medium';
+    font-size: 1.75rem;
+    /* line-height: 28px; */
+    width: 30rem;
+    text-align: start;
+    color: var(--white-color);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    /* overflow: hidden; */
+}
+.team-mem-title-box {
+    /* display: flex;
+    background-color: #7F4B3B;
+    z-index: 10;
+    width: 100%;
+    height: 128px;
+    left: 347px;
+    top: 578px;
+    box-shadow: 4px 4px 4px rgba(70, 33, 22, 0.25);
+    border-radius: 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px; */
+    /* color: var(--main-color);
+    padding: 0.75rem;
+    border-radius: 30px;
+    background-color: var(--sec-color);
+    text-align: center;
+    font-family: 'inter-regular';
+    font-size: 3rem; */
+    max-width: 600px;
+    margin: 0 auto;
+}
+.team-mem-title {
+    /* display: flex;
+    font-family: 'inter-regular';
+    font-size: 3.75rem;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+    color: var(--main-color); */
+    color: var(--main-color);
+    padding: 0.75rem;
+    border-radius: 30px;
+    background-color: var(--sec-color);
+    text-align: center;
+    font-family: 'inter-regular';
+    font-size: 3rem;
+}
+
+.team-mem-title-img {
+    max-width: 400px;
+    min-width: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.team-mem-container {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 2rem 0;
+    margin: auto 0;
+}
+.team-mem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding-right: 2.25rem;
+    padding-left: 4.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 277px;
+    height: 384px;
+    background-color: var(--third-color);
+    box-shadow: 4px 4px 4px rgba(70, 33, 22, 0.25);
+    border-radius: 30px;
+
+}
+.team-mem-img {
+    max-width: 400px;
+    margin: 2rem;
+    object-fit: cover;
+}
+.team-mem-name {
+    font-family: 'inter-medium';
+    font-size: 1rem;
+    line-height: 28px;
+    text-align: center;
+    color: var(--sec-color);
+    padding-right: 2.25rem;
+    padding-left: -4.5rem;
+}
+.team-mem-email {
+    font-family: 'inter-medium';
+    font-size: 1rem;
+    line-height: 28px;
+    text-align: center;
+    color: var(--sec-color);
+    padding-right: 2.25rem;
+    padding-left: -4.5rem;
+
+}
+.team-mem-role {
+    display: inline-block;
+    font-family: 'inter-medium';
+    font-size: 16px;
+    /* line-height: 28px; */
+    text-align: center;
+    color: var(--sec-color);
+    padding-right: 2.5rem;
+    padding-left: -4.5rem;
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .team-title {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .team-title {
+        font-size: 2rem;
+    }
+}
