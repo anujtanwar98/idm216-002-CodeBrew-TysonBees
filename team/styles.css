@@ -58,20 +58,20 @@
     object-fit: cover;
 }
 .container {
-    /* position: relative; */
+    position: relative;
     text-align: center;
-    /* color: white; */
+    color: white;
 }
 .centered {
     position: absolute;
     top: 50%;
-    left: 30%;
-    transform: translate(-50%, -30%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .team-title {
     font-family: 'inter-extra-bold';
-    font-size: 5.625rem;
-    line-height: 58px;
+    font-size: 5.5rem;
+    /* line-height: 58px; */
     /* text-align: center; */
     color: var(--main-color);
     margin-bottom: 20px;
@@ -188,28 +188,17 @@
         margin-right: 16px;
         padding: 0;
     }
-    .centered {
-        position: absolute;
-        top: 30%;
-        left: 30%;
-        transform: translate(-50%, -30%);
-    }
 }
 @media screen and (max-width: 400px) {
     .team-title {
         font-size: 1.5rem;
     }
     .team-info {
-        font-size: 1rem;
+        font-size: 0.75rem;
         text-align: start;
         margin-left: 16px;
         margin-right: 16px;
+        width: 20rem;
         padding: 0;
-    }
-    .centered {
-        position: absolute;
-        top: 30%;
-        left: 30%;
-        transform: translate(-50%, -30%);
     }
 }
