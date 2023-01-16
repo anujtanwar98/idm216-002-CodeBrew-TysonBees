@@ -47,17 +47,20 @@
     font-family: 'inter-thin';
     src: url('asset/fonts/Inter-Thin.woff2');
 }
-
+body {
+    background-color: var(--main-color);
+}
 .background-image {
-    z-index: -1;
+    /* z-index: -1; */
     /* position: fixed; */
     width: 100%;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    /* left: 0px;
+    top: 0px; */
     object-fit: cover;
+    padding-bottom: 10px;
 }
-.container {
+/* .container {
     position: relative;
     text-align: center;
     color: white;
@@ -67,7 +70,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 .team-title {
     font-family: 'inter-extra-bold';
     font-size: 5.5rem;
@@ -93,8 +96,11 @@
     background-color: var(--main-color);
 }
 .team-mem-title-box {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .team-mem-title {
     color: var(--main-color);
@@ -103,7 +109,7 @@
     background-color: var(--sec-color);
     text-align: center;
     font-family: 'inter-regular';
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .team-mem-title-img {
@@ -126,23 +132,19 @@
 .team-mem {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    margin: 2rem;
-    padding-right: 2.25rem;
-    padding-left: 4.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 277px;
-    height: 384px;
+    margin: 1rem 2rem;
+    width: 400px;
+    height: 500px;
     background-color: var(--third-color);
     box-shadow: 4px 4px 4px rgba(70, 33, 22, 0.25);
     border-radius: 30px;
-
 }
 .team-mem-img {
-    max-width: 400px;
-    margin: 2rem;
+    max-width: 300px;
+    text-align: center;
+    margin: 3rem 2rem 2rem 2rem;
     object-fit: cover;
 }
 .team-mem-name {
@@ -151,8 +153,6 @@
     line-height: 28px;
     text-align: center;
     color: var(--sec-color);
-    padding-right: 2.25rem;
-    padding-left: -4.5rem;
 }
 .team-mem-email {
     font-family: 'inter-medium';
@@ -160,8 +160,6 @@
     line-height: 28px;
     text-align: center;
     color: var(--sec-color);
-    padding-right: 2.25rem;
-    padding-left: -4.5rem;
 
 }
 .team-mem-role {
@@ -171,9 +169,6 @@
     /* line-height: 28px; */
     text-align: center;
     color: var(--sec-color);
-    padding-right: 2.5rem;
-    padding-left: -4.5rem;
-
 }
 
 
@@ -188,6 +183,24 @@
         margin-right: 16px;
         padding: 0;
     }
+    .team-mem {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 1rem 2rem;
+        width: 350px;
+        height: 450px;
+    }
+    .team-mem-img {
+        max-width: 250px;
+    }
+    .team-mem-title-box {
+        max-width: 300px;
+    }
+    .team-mem-title {
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width: 400px) {
     .team-title {
@@ -200,5 +213,23 @@
         margin-right: 16px;
         width: 20rem;
         padding: 0;
+    }
+    .team-mem {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 1rem 2rem;
+        width: 300px;
+        height: 400px;
+    }
+    .team-mem-img {
+        max-width: 200px;
+    }
+    .team-mem-title-box {
+        max-width: 200px;
+    }
+    .team-mem-title {
+        font-size: 1.25rem;
     }
 }
