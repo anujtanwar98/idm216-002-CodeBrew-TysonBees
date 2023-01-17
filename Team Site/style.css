@@ -1,0 +1,433 @@
+/* *{
+    border: 1px red solid;
+} */
+@font-face {
+    font-family: 'inter-black';
+    src: url('font/Inter-Black.woff2');
+}
+@font-face {
+    font-family: 'inter-bold';
+    src: url('font/Inter-Bold.woff2');
+}
+@font-face {
+    font-family: 'inter-extra-bold';
+    src: url('font/Inter-ExtraBold.woff2');
+}
+@font-face {
+    font-family: 'inter-extra-light';
+    src: url('font/Inter-ExtraLight.woff2');
+}
+@font-face {
+    font-family: 'inter-light';
+    src: url('font/Inter-Light.woff2');
+}
+@font-face {
+    font-family: 'inter-medium';
+    src: url('font/Inter-Medium.woff2');
+}
+@font-face {
+    font-family: 'inter-regular';
+    src: url('font/Inter-Regular.woff2');
+}
+@font-face {
+    font-family: 'inter-SemiBold';
+    src: url('font/Inter-SemiBold.woff2');
+}
+@font-face {
+    font-family: 'inter-thin';
+    src: url('font/Inter-Thin.woff2');
+}
+
+html{
+    background-color: #C6B5A8;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+}
+h1{
+    font-size: 80px;
+    line-height: 50px;
+    font-family: inter-extra-bold;
+}
+
+#heroDiv{
+    background-image: url('imgs/hero.png');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+}
+
+#heroText{
+    margin-top: 130px;
+    margin-left: 200px;
+    width: 50%;
+    color: #C6B5A8;
+}
+
+#heroPara p{
+    font-size: 28px;
+    font-family: inter-regular;
+}
+
+.tag{
+    font-size: 28px;
+    font-family: Baloo;
+    color: #C28C7B;
+    font-weight: bold;
+}
+
+
+#main{
+    background-image: url('imgs/bottomBG.png');
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.team-mem-title-container {
+    background-color: #7F4B3B;
+}
+
+.team-mem-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 0;
+    margin: auto 0;
+}
+.team-mem-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.team-mem-container a:hover{
+    box-shadow: 0 0 1.25rem #ECDEFA ;
+    transform: translatey(-10px);
+    transition: ease-in 0.25s;
+}
+
+
+.team-mem-title-box {
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.team-mem-title {
+    color: #f5d9c3;
+    padding: 0.75rem;
+    border-radius: 30px;
+    background-image: url('imgs/meetTeamHead.png');
+    background-size: cover;
+    text-align: center;
+    font-family: 'inter-regular';
+    font-size: 2.5rem;
+    transform: translatey(0px);
+    animation: float 10s ease-in-out infinite;
+}
+
+
+.team-mem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 3rem;
+    width: 280px;
+    height: 480px;
+    box-shadow: 4px 4px 4px rgba(70, 33, 22, 0.25);
+    border-radius: 30px;
+    background-image: url('imgs/memBg.png');
+    background-size: cover;
+    
+}
+
+
+    @keyframes float{
+        0%{
+            box-shadow: 0 1.5rem 2rem 0 rgba(0,0,0,0.4);
+            transform: translatey(0px);
+        }
+        50%{
+            box-shadow: 0 2.25rem 2rem 0 rgba(0,0,0,0.2);
+            transform: translatey(-15px);
+        }
+        100%{
+            box-shadow: 0 1.5rem 2rem 0 rgba(0,0,0,0.4);
+            transform: translatey(0px);
+        }
+    }
+ 
+
+
+.team-mem-img {
+    max-width: 300px;
+    text-align: center;
+    margin: 3rem 2rem 1rem 2rem;
+    padding-left: 10%;
+
+}
+.team-mem-name {
+    font-family: 'inter-medium';
+    font-size: 1.50rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #5D3327;
+
+}
+
+.team-mem-email {
+    font-family: 'inter-medium';
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    margin: 4px;
+}
+
+.team-mem-role {
+    display: inline-block;
+    font-family: 'inter-medium';
+    font-size: 16px;
+    /* line-height: 28px; */
+    text-align: center;
+    margin: 4px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #heroDiv{
+        background-image: url('imgs/hero.png');
+        background-size: cover;
+        height: 450px;
+        display: flex;
+    }
+
+    h1{
+        font-size: 65px;
+        line-height: 50px;
+        font-family: inter-extra-bold;
+    }
+
+    #heroText{
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 50%;
+        color: #C6B5A8;
+    }
+
+    #heroPara p{
+        font-size: 25px;
+        font-family: inter-regular;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+    #heroDiv{
+        background-image: url('imgs/hero.png');
+        background-size: cover;
+        height: 400px;
+        display: flex;
+    }
+    h1{
+        font-size: 70px;
+        /* line-height: 50px; */
+        margin: 0;
+        font-family: inter-extra-bold;
+    }
+    #heroText{
+        margin-top: 90px;
+        margin-left: 120px;
+        width: 60%;
+        color: #C6B5A8;
+    }
+
+    #heroPara p{
+        font-size: 23px;
+        font-family: inter-regular;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .team-title {
+        font-size: 2.5rem;
+    }
+    .team-info {
+        font-size: 1rem;
+        text-align: start;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 0;
+    }
+    .team-mem {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 1rem 2rem;
+        width: 350px;
+        height: 450px;
+    }
+    .team-mem-img {
+        max-width: 250px;
+    }
+    .team-mem-title-box {
+        max-width: 300px;
+    }
+    .team-mem-title {
+        font-size: 1.5rem;
+    }
+    .team-mem-email {
+        font-family: 'inter-medium';
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: center;
+        margin: 8px;
+    
+    }
+    .team-mem-role {
+        display: inline-block;
+        font-family: 'inter-medium';
+        font-size: 16px;
+        /* line-height: 28px; */
+        text-align: center;
+        margin: 8px;
+    }
+
+    h1{
+        font-size: 60px;
+        font-family: inter-extra-bold;
+    }
+
+    #heroText{
+        margin-top: 50px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        color: #C6B5A8;
+    }
+
+    #heroPara p{
+        font-size: 20px;
+        font-family: inter-regular;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    
+    h1{
+        font-size: 55px;
+        font-family: inter-extra-bold;
+    }
+
+    #heroPara p{
+        font-size: 20px;
+        font-family: inter-regular;
+    }
+    
+    #heroText{
+        margin-top: 50px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        color: #C6B5A8;
+    }
+
+}
+@media screen and (max-width: 570px) {
+    h1{
+        font-size: 45px;
+        font-family: inter-extra-bold;
+    }
+
+    #heroPara p{
+        font-size: 16px;
+        font-family: inter-regular;
+    }
+    
+    #heroText{
+        margin-top: 50px;
+        margin-left: 90px;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        color: #C6B5A8;
+    }
+    .tag{
+        font-size: 18px;
+        font-family: Baloo;
+        color: #C28C7B;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    h1{
+        font-size: 50px;
+        font-family: inter-extra-bold;
+    }
+
+    .team-title {
+        font-size: 1.5rem;
+    }
+    .team-info {
+        font-size: 0.75rem;
+        text-align: start;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 20rem;
+        padding: 0;
+    }
+    .team-mem {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 1rem 2rem;
+        width: 300px;
+        height: 400px;
+    }
+    .team-mem-img {
+        max-width: 200px;
+    }
+    .team-mem-title-box {
+        max-width: 200px;
+    }
+    .team-mem-title {
+        font-size: 1.25rem;
+    }
+    
+.team-mem-email {
+    font-family: 'inter-medium';
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    margin: 4px;
+
+}
+.team-mem-role {
+    display: inline-block;
+    font-family: 'inter-medium';
+    font-size: 16px;
+    /* line-height: 28px; */
+    text-align: center;
+    margin: 4px;
+}
+
+}
