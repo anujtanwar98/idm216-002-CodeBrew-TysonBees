@@ -208,19 +208,21 @@ h1{
     #heroDiv{
         background-image: url('imgs/hero.png');
         background-size: cover;
-        height: 450px;
+        height: 320px;
         display: flex;
     }
 
     h1{
         font-size: 65px;
-        line-height: 50px;
+        line-height: 30px;
         font-family: inter-extra-bold;
     }
 
     #heroText{
-        margin-top: 80px;
-        margin-left: 150px;
+        margin-top: 40px;
+        margin-left: 200px;
+        /* margin-top: 80px;
+        margin-left: 150px; */
         width: 50%;
         color: #C6B5A8;
     }
@@ -236,7 +238,7 @@ h1{
     #heroDiv{
         background-image: url('imgs/hero.png');
         background-size: cover;
-        height: 400px;
+        height: 320px;
         display: flex;
     }
     h1{
@@ -246,8 +248,10 @@ h1{
         font-family: inter-extra-bold;
     }
     #heroText{
-        margin-top: 90px;
+        margin-top: 40px;
         margin-left: 120px;
+        /* margin-top: 90px;
+        margin-left: 120px; */
         width: 60%;
         color: #C6B5A8;
     }
@@ -432,4 +436,17 @@ h1{
     margin: 4px;
 }
 
+}
+
+@media screen and (min-width: 1500px) {
+    #heroText{
+        margin-top: 60px;
+        margin-left: 250px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #heroText{
+        margin-top: 60px;
+        margin-left: 260px;
+    }
 }
