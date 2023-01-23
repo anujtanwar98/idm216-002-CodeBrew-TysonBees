@@ -20,6 +20,7 @@
     left: 0px;
     top: 0px;
     object-fit: cover;
+    filter: blur(4px);
 }
 
 .brew-soon-title {
@@ -30,6 +31,11 @@
     align-items: center;
     font-family: 'inter-black';
     color: var(--main-color);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.8); /* Black w/opacity/see-through */
+    border-radius: 20px;
+    padding: 20px;
+    /* color: white; */
 }
 .soon-container {
     position: absolute;
