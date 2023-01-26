@@ -14,7 +14,7 @@
 *.DS_Store
 
 .env.php
-.env.production.php
+.env.production.php /* Contact admin for this file */
 .env.local.php
 public_html
 final-test
