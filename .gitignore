@@ -1,0 +1,7 @@
+.env.php
+.env.production.php
+.env.local.php
+public_html
+final-test
+
+.DS_Store
