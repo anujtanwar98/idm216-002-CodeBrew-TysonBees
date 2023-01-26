@@ -38,6 +38,15 @@
     src: url('font/Inter-Thin.woff2');
 }
 
+.logo-code {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
 html{
     background-color: #C6B5A8;
 }
