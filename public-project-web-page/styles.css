@@ -1,0 +1,118 @@
+:root{
+    --nav-color: #FFF2D9;
+    --white-color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'inter-black';
+    src: url('asset/fonts/Inter-Black.woff2');
+}
+@font-face {
+    font-family: 'inter-bold';
+    src: url('asset/fonts/Inter-Bold.woff2');
+}
+@font-face {
+    font-family: 'inter-extra-bold';
+    src: url('asset/fonts/Inter-ExtraBold.woff2');
+}
+@font-face {
+    font-family: 'inter-extra-light';
+    src: url('asset/fonts/Inter-ExtraLight.woff2');
+}
+@font-face {
+    font-family: 'inter-light';
+    src: url('asset/fonts/Inter-Light.woff2');
+}
+@font-face {
+    font-family: 'inter-medium';
+    src: url('asset/fonts/Inter-Medium.woff2');
+}
+@font-face {
+    font-family: 'inter-regular';
+    src: url('asset/fonts/Inter-Regular.woff2');
+}
+@font-face {
+    font-family: 'inter-SemiBold';
+    src: url('asset/fonts/Inter-SemiBold.woff2');
+}
+@font-face {
+    font-family: 'inter-thin';
+    src: url('asset/fonts/Inter-Thin.woff2');
+}
+
+.add-nav-color {
+    background-color: var(--nav-color);
+}
+
+.user-personna {
+    font-family: inter-bold, sans-serif;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.user-personna-sub-title {
+    font-family: inter-regular, sans-serif;
+    font-size: 1.25rem;
+    color: #000;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+/* .first-container {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);  */
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: minmax(100px, auto); */
+/* } */
+
+
+.second-container {
+    display: grid;
+    grid-gap: 0.7rem;
+    /* grid-template-columns: repeat(3, 1fr);  */
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    /* grid-auto-rows: minmax(100px, auto); */
+    background-color: var(--white-color);
+}
+
+.user-personna-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.style-guide {
+    font-family: inter-bold, sans-serif;
+    font-size: 2.5rem;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1670px) {
+    .second-container {
+        display: grid;
+        grid-gap: 0.7rem;
+        grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    }
+}
+@media screen and (max-width: 1450px) {
+    .second-container {
+        display: grid;
+        grid-gap: 0.7rem;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+@media screen and (max-width: 1280px) {
+    .second-container {
+        display: grid;
+        grid-gap: 0.7rem;
+        grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    }
+}
+
