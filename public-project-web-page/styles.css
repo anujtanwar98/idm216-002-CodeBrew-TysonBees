@@ -270,7 +270,7 @@
 .sixteenth-container {
     display: none;
 }
-.eighth-container {
+/* .eighth-container {
     display: flex;
     flex-wrap: no-wrap;
     overflow-x: auto;
@@ -299,7 +299,7 @@
     flex-wrap: no-wrap;
     overflow-x: auto;
     margin: 10px;
-}
+} */
 
 @media screen and (max-width: 1670px) {
     .second-container {
@@ -323,6 +323,19 @@
     }
 }
 @media screen and (max-width: 833px) {
+    .eighth-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: auto;
+        margin: 10px;
+    }
+    .tenth-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: auto;
+        margin: 10px;
+    }
+    
     .journey-map-img2 {
         width: 100%;
     }
@@ -369,6 +382,24 @@
 
 
 @media screen and (max-width: 450px) {
+    .twelfth-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: auto;
+        margin: 10px;
+    }
+    .fourteen-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: auto;
+        margin: 10px;
+    }
+    .sixteenth-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: auto;
+        margin: 10px;
+    }
     .journey-map-img4 {
         width: 100%;
     }
