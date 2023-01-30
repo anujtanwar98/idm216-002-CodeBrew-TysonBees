@@ -137,7 +137,138 @@
     background-color: var(--sec-color);
     color: var(--white-color);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.fifth-container {
+    margin: 0 10px;
+}
+.sixth-container {
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    margin: 20px;
+}
+.journey-map-img {
+    flex: 0 0 auto;
+    width: auto;
+    /* height: 100%; */
+    max-width: 100%;
+    margin: 10px;
+}
+.seventh-container {
+    margin: 0 10px;
+}
+.ninth-container {
+    margin: 0 10px;
+}
+.eleventh-container {
+    margin: 0 10px;
+}
+.thirteen-container {
+    margin: 0 10px;
+}
+.fifteenth-container {
+    margin: 0 10px;
+}
+
+/* .journey-map-img2 {
+    display: none;
+}
+.journey-map-img3 {
+    display: none;
+}
+.journey-map-img4 {
+    display: none;
+}
+.journey-map-img5 {
+    display: none;
+}
+.journey-map-img6 {
+    display: none;
+} */
+
+.user-scenario-goal1 {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--sec-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 20px;
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+}
+.user-scenario-goal2 {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--sec-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 20px;
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+}
+.user-scenario-goal3 {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--sec-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+.user-scenario-goal4 {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--sec-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+.user-scenario-goal5 {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--sec-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.seventh-container {
+    display: none;
+}
+.eighth-container {
+    display: none;
+}
+.ninth-container {
+    display: none;
+}
+.tenth-container {
+    display: none;
+}
+.eleventh-container {
+    display: none;
+}
+.twelfth-container {
+    display: none;
+}
+.thirteen-container {
+    display: none;
+}
+.fourteen-container {
+    display: none;
+}
+.fifteenth-container {
+    display: none;
+}
+.sixteenth-container {
+    display: none;
 }
 
 @media screen and (max-width: 1670px) {
@@ -161,4 +292,58 @@
         grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
     }
 }
+@media screen and (max-width: 833px) {
+    .fifth-container {
+        display: none;
+    }
+    .sixth-container {
+        display: none;
+    }
+    .seventh-container {
+        display: grid;
+    }
+    .eighth-container {
+        display: grid;
+    }
+    .ninth-container {
+        display: grid;
+    }
+    .tenth-container {
+        display: grid;
+    }
+    
+}
 
+
+@media screen and (max-width: 450px) {
+    .seventh-container {
+        display: none;
+    }
+    .eighth-container {
+        display: none;
+    }
+    .ninth-container {
+        display: none;
+    }
+    .tenth-container {
+        display: none;
+    }
+    .eleventh-container {
+        display: grid;
+    }
+    .twelfth-container {
+        display: grid;
+    }
+    .thirteen-container {
+        display: grid;
+    }
+    .fourteen-container {
+        display: grid;
+    }
+    .fifteenth-container {
+        display: grid;
+    }
+    .sixteenth-container {
+        display: grid;
+    }
+}
