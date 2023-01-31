@@ -120,12 +120,16 @@
 }
 .fourth-container {
     margin: 30px 0 0 0;
+    display: flex;
+    flex-wrap: no-wrap;
+    overflow-x: auto;
+    margin: 10px;
 }
 .team-moodboard-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: 10px;
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* margin: 10px; */
 }
 .journey-map {
     font-family: inter-bold, sans-serif;
@@ -303,6 +307,26 @@
     overflow-x: auto;
     margin: 10px;
 } */
+
+.critical-path {
+    font-family: inter-bold, sans-serif;
+    font-size: 2.5rem;
+    padding:  50px 10px 0 10px;
+    /* margin: 10px; */
+}
+
+.seventeenth-container {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 10px;
+    padding: 10px;
+}
+.critical-path-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover no-repeat;
+}
 
 @media screen and (max-width: 1670px) {
     .second-container {
