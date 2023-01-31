@@ -146,6 +146,18 @@
     padding: 10px;
     border-radius: 20px;
 }
+.user-user-sub-title {
+    font-family: inter-regular, sans-serif;
+    font-size: 1.25rem;
+}
+.user-scenario-sub-title {
+    font-family: inter-regular, sans-serif;
+    font-size: 1.25rem;
+}
+.user-goal-sub-title {
+    font-family: inter-regular, sans-serif;
+    font-size: 1.25rem;
+}
 
 .fifth-container {
     margin: 0 10px;
@@ -324,7 +336,6 @@
 }
 .critical-path-img {
     width: 100%;
-    height: 100%;
     object-fit: cover no-repeat;
 }
 
