@@ -124,6 +124,8 @@
     flex-wrap: no-wrap;
     overflow-x: auto;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .team-moodboard-img {
     width: 100%;
