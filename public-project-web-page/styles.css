@@ -257,7 +257,7 @@
     padding: 10px;
     border-radius: 20px;
 }
-.user-scenario-goal4 {
+/* .user-scenario-goal4 {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(1, 1fr);
@@ -274,7 +274,7 @@
     color: var(--white-color);
     padding: 10px;
     border-radius: 20px;
-}
+} */
 
 .seventh-container {
     display: none;
@@ -300,48 +300,7 @@
 .twelfth-container {
     display: none;
 }
-.thirteen-container {
-    display: none;
-}
-.fourteen-container {
-    display: none;
-}
-.fifteenth-container {
-    display: none;
-}
-.sixteenth-container {
-    display: none;
-}
-/* .eighth-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
-    margin: 10px;
-}
-.tenth-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
-    margin: 10px;
-}
-.twelfth-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
-    margin: 10px;
-}
-.fourteen-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
-    margin: 10px;
-}
-.sixteenth-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
-    margin: 10px;
-} */
+
 
 .critical-path {
     font-family: inter-bold, sans-serif;
@@ -477,18 +436,6 @@
     .twelfth-container {
         display: none;
     }
-    .thirteen-container {
-        display: none;
-    }
-    .fourteen-container {
-        display: none;
-    }
-    .fifteenth-container {
-        display: none;
-    }
-    .sixteenth-container {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 750px) {
@@ -524,13 +471,28 @@
         overflow-x: auto;
         margin: 10px;
     }
-    .journey-map-img4 {
+    .phn-journey-map-img1 {
         width: 100%;
     }
-    .journey-map-img5 {
+    .phn-journey-map-img2 {
         width: 100%;
     }
-    .journey-map-img6 {
+    .phn-journey-map-img3 {
+        width: 100%;
+    }
+    .phn-journey-map-img4 {
+        width: 100%;
+    }
+    .phn-journey-map-img5 {
+        width: 100%;
+    }
+    .phn-journey-map-img6 {
+        width: 100%;
+    }
+    .phn-journey-map-img7 {
+        width: 100%;
+    }
+    .phn-journey-map-img8 {
         width: 100%;
     }
     .seventh-container {
@@ -555,18 +517,6 @@
         display: grid;
     }
     .twelfth-container {
-        display: grid;
-    }
-    .thirteen-container {
-        display: grid;
-    }
-    .fourteen-container {
-        display: grid;
-    }
-    .fifteenth-container {
-        display: grid;
-    }
-    .sixteenth-container {
         display: grid;
     }
 }
