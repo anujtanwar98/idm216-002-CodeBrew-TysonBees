@@ -180,6 +180,9 @@
 .seventh-container {
     margin: 0 10px;
 }
+.extra-first-container {
+    margin: 0 10px;
+}
 .ninth-container {
     margin: 0 10px;
 }
@@ -209,10 +212,10 @@
     display: none;
 } */
 
-.user-scenario-goal1 {
+.tab-user-scenario-goal1 {
     display: grid;
     grid-gap: 0.7rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     background-color: var(--sec-color);
     color: var(--white-color);
     padding: 10px;
@@ -221,10 +224,22 @@
     align-items: center;
     justify-content: center; */
 }
-.user-scenario-goal2 {
+.tab-user-scenario-goal2 {
     display: grid;
     grid-gap: 0.7rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--sec-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 20px;
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+}
+.tab-user-scenario-goal3 {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(1, 1fr);
     background-color: var(--sec-color);
     color: var(--white-color);
     padding: 10px;
@@ -265,6 +280,12 @@
     display: none;
 }
 .eighth-container {
+    display: none;
+}
+.extra-first-container {
+    display: none;
+}
+.extra-second-container {
     display: none;
 }
 .ninth-container {
@@ -398,6 +419,12 @@
     }
 }
 @media screen and (max-width: 833px) {
+    .extra-second-container {
+        display: flex;
+        flex-wrap: no-wrap;
+        overflow-x: auto;
+        margin: 10px;
+    }
     .eighth-container {
         display: flex;
         flex-wrap: no-wrap;
@@ -411,10 +438,13 @@
         margin: 10px;
     }
     
-    .journey-map-img2 {
+    .tab-journey-map-img1 {
         width: 100%;
     }
-    .journey-map-img3 {
+    .tab-journey-map-img2 {
+        width: 100%;
+    }
+    .tab-journey-map-img3 {
         width: 100%;
     }
     .fifth-container {
@@ -427,6 +457,12 @@
         display: grid;
     }
     .eighth-container {
+        display: grid;
+    }
+    .extra-first-container {
+        display: grid;
+    }
+    .extra-second-container {
         display: grid;
     }
     .ninth-container {
@@ -501,6 +537,12 @@
         display: none;
     }
     .eighth-container {
+        display: none;
+    }
+    .extra-first-container {
+        display: none;
+    }
+    .extra-second-container {
         display: none;
     }
     .ninth-container {
