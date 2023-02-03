@@ -90,6 +90,9 @@
     height: 100%;
     object-fit: cover no-repeat;
 }
+.mob-persona-container {
+    display: none;
+}
 
 .style-guide {
     font-family: inter-bold, sans-serif;
@@ -447,9 +450,17 @@
 }
 @media screen and (max-width: 550px) {
     .second-container {
+        display: none;
+        /* grid-gap: 0.7rem;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    }
+    .mob-persona-container {
         display: grid;
         grid-gap: 0.7rem;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        background-color: var(--white-color);
+        margin: 10px;
+        padding: 10px;
     }
 }
 @media screen and (max-width: 450px) {
