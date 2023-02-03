@@ -3,6 +3,7 @@
 - DEV: https://byanuj.com/idm216/dev/
 - FINAL LIVE: https://byanuj.com/idm216/final/
 - TEAM LIVE: https://byanuj.com/idm216/team/
+- Project Page: https://byanuj.com/idm216/project/
 
 ## Gitignore
 
