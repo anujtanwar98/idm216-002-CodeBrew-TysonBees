@@ -165,9 +165,9 @@
     margin: 0 10px;
 }
 .sixth-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    overflow-x: auto;
+    display: grid;
+    /* flex-wrap: no-wrap;
+    overflow-x: auto; */
     margin: 10px;
 }
 .journey-map-img {
