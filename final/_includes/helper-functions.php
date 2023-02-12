@@ -65,3 +65,7 @@ function sanitize_value($value)
     global $db_connection;
     return mysqli_real_escape_string($db_connection, $value);
 }
+function price_with_dollar_sign($price) 
+{
+    return '$' . number_format($price, 2);
+}

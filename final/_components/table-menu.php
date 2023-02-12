@@ -23,8 +23,8 @@ if (!isset($menu)) {
     </thead>
 
     <!--  this is for ref -->
-    <!-- <td>{$recipe['ingredients']}</td>
-    <td>{$recipe['steps']}</td> -->
+    <!-- <td>{$menu_item['name']}</td>
+    <td>{$menu_item['name']}</td> -->
     
     <tbody>
       <?php
@@ -37,7 +37,7 @@ if (!isset($menu)) {
               <td>{$menu_item['menu_category']}</td>
               <td><img src='{$menu_item['images']}' alt=''></td>
               <td>{$menu_item['name']}</td>
-              <td>{$menu_item['price']}</td>
+              <td>" . price_with_dollar_sign($menu_item['price']) . "</td>
               <td>{$menu_item['description']}</td>
               <td>{$menu_item['allergen_info']}</td>
               <td>{$menu_item['nutri_facts']}</td>
