@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-interactions</title>
+    <link rel="icon" type="image/png" href="asset/images/anuj_logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">
+            Micro-interactions
+        </h1>
+    </header>
+    <div class="viewing-area">
+        <div class="quantity-container">
+            <button class="decrement">-</button>
+            <input type="text" class="quantity-input" value="1">
+            <button class="increment">+</button>
+        </div>
+        <div class="view-button">
+            <button id="my-button">Click me</button>
+        </div>
+    </div>
+    <main class="main">
+        <h2 class="triggers-micro">View Menu Button</h2>
+        <div class="sub-box">
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Triggers</h3>
+                </div>
+                <div class="small-box-text">
+                    <ul class="small-box-items">
+                        <!-- <h3>On-Hover</h3> -->
+                        <li class="small-box-list-items">
+                            Hover On/Off Menu
+                        </li>
+                        <li class="small-box-list-items">
+                            On Click Hold Button
+                        </li>
+                        <h3>On-Click</h3>
+                        <li class="small-box-list-items">
+                            On Click Release Button
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Rules</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>Hover on Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Background color changes to (insert hex code here) with a drop-shadow of (#)px along the bottom in (Drop shadow color) 
+                        </li>
+                        <li class="small-box-list-items">
+                            Cursor changes from default to pointer
+                        </li>
+                    </ul>
+                    <h3>Hover off Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Background color changes to (insert hex code here) with no drop shadow
+                        </li>
+                        <li class="small-box-list-items">
+                            Cursor changes from pointer to default
+                        </li>
+                    </ul>
+                    <h3>On Click Hold Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Background Color changes (slight change) with a border stroke of (insert hex code)
+                        </li>
+                        <li class="small-box-list-items">
+                            Cursor changes from pointer to progress 
+                        </li>
+                        <li class="small-box-list-items">
+                            Button translates (#)px down from original position
+                        </li>
+                        <li class="small-box-list-items">
+                            Button Text Color Changes to ( New Text color) 
+                        </li>
+                    </ul>
+                    <h3>On Click Release Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from progress to pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            Button translates (#)px up to original position 
+                        </li>
+                        <li class="small-box-list-items">
+                            Button text changes to a loading spinner that is rotating 
+                        </li>
+                        <li class="small-box-list-items">
+                            Loads Menu Page
+                        </li>
+                    </ul>
+                    <h2>BackEnd</h2>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Once Button is clicked, system will check and load menu information from the Menu Items Table in our database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>Hover on Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Background color changes to (insert hex code here) with a drop-shadow of (#)px along the bottom in (Drop shadow color) 
+                        </li>
+                        <li class="small-box-list-items">
+                            Cursor changes from default to pointer
+                        </li>
+                    </ul>
+                    <h3>Hover off Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Background color changes to (insert hex code here) with no drop shadow
+                        </li>
+                        <li class="small-box-list-items">
+                            Cursor changes from pointer to default
+                        </li>
+                    </ul>
+                    <h3>On Click Hold Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Background Color changes (slight change) with a border stroke of (insert hex code)
+                        </li>
+                        <li class="small-box-list-items">
+                            Cursor changes from pointer to progress 
+                        </li>
+                        <li class="small-box-list-items">
+                            Button translates (#)px down from original position
+                        </li>
+                        <li class="small-box-list-items">
+                            Button Text Color Changes to ( New Text color) 
+                        </li>
+                    </ul>
+                    <h3>On Click Release Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from progress to pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            Button translates (#)px up to original position 
+                        </li>
+                        <li class="small-box-list-items">
+                            Button text changes to a loading spinner that is rotating 
+                        </li>
+                        <li class="small-box-list-items">
+                            Loads Menu Page
+                        </li>
+                    </ul>
+                    <h2>BackEnd</h2>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Once Button is clicked, system will check and load menu information from the Menu Items Table in our database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Loops and Modes</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Modes</h2>
+                    <h3>On Clicked</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When Menu button is clicked, the Menu page will be displayed
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="triggers-micro">Menu Item Section</h2>
+        <div class="sub-box">
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Triggers</h3>
+                </div>
+                <div class="small-box-text">
+                    <ul class="small-box-items">
+                        <!-- <h3>On-Hover</h3> -->
+                        <li class="small-box-list-items">
+                            On Click Hold
+                        </li>
+                        <li class="small-box-list-items">
+                            On Drag (Horizontally)
+                        </li>
+                        <!-- <h3>On-Click</h3> -->
+                        <li class="small-box-list-items">
+                            Click on Menu Item
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Rules</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>On click Hold</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Default to Grab 
+                        </li>
+                    </ul>
+                    <h3>On Drag</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Grab to grabbing
+                        </li>
+                        <li class="small-box-list-items">
+                            Menu Items move in direction of drag (Left to right) 
+                        </li>
+                    </ul>
+                    <h3>On-Click Release</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from grabbing to default
+                        </li>
+                    </ul>
+                    <h3>Click on Menu Item</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from default to progress
+                        </li>
+                        <li class="small-box-list-items">
+                            Modal opens with Menu Item information
+                        </li>
+                    </ul>
+                    <h4>BackEnd</h4>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When Click On Menu Item, system must retrieve Menu Item information from Database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>On click Hold</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Default to Grab 
+                        </li>
+                    </ul>
+                    <h3>On Drag</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Grab to grabbing
+                        </li>
+                        <li class="small-box-list-items">
+                            Menu Items move in direction of drag (Left to right) 
+                        </li>
+                    </ul>
+                    <h3>On-Click Release</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from grabbing to default
+                        </li>
+                    </ul>
+                    <h3>Click on Menu Item</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from default to progress
+                        </li>
+                        <li class="small-box-list-items">
+                            Modal opens with Menu Item information
+                        </li>
+                    </ul>
+                    <h4>BackEnd</h4>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When Click On Menu Item, system must retrieve Menu Item information from Database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Loops and Modes</h3>
+                </div>
+                <div class="small-box-text">
+                    <!-- <h2>Modes</h2> -->
+                    <!-- <h3>On Clicked</h3> -->
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            N/A
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="triggers-micro">Modal</h2>
+        <div class="sub-box">
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Triggers</h3>
+                </div>
+                <div class="small-box-text">
+                    <ul class="small-box-items">
+                        <!-- <h3>On-Hover</h3> -->
+                        <li class="small-box-list-items">
+                            On Click Hold
+                        </li>
+                        <li class="small-box-list-items">
+                            On Drag (Horizontally)
+                        </li>
+                        <!-- <h3>On-Click</h3> -->
+                        <li class="small-box-list-items">
+                            Click on Menu Item
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Rules</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>On click Hold</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Default to Grab 
+                        </li>
+                    </ul>
+                    <h3>On Drag</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Grab to grabbing
+                        </li>
+                        <li class="small-box-list-items">
+                            Menu Items move in direction of drag (Left to right) 
+                        </li>
+                    </ul>
+                    <h3>On-Click Release</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from grabbing to default
+                        </li>
+                    </ul>
+                    <h3>Click on Menu Item</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from default to progress
+                        </li>
+                        <li class="small-box-list-items">
+                            Modal opens with Menu Item information
+                        </li>
+                    </ul>
+                    <h4>BackEnd</h4>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When Click On Menu Item, system must retrieve Menu Item information from Database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>On click Hold</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Default to Grab 
+                        </li>
+                    </ul>
+                    <h3>On Drag</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from Grab to grabbing
+                        </li>
+                        <li class="small-box-list-items">
+                            Menu Items move in direction of drag (Left to right) 
+                        </li>
+                    </ul>
+                    <h3>On-Click Release</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from grabbing to default
+                        </li>
+                    </ul>
+                    <h3>Click on Menu Item</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from default to progress
+                        </li>
+                        <li class="small-box-list-items">
+                            Modal opens with Menu Item information
+                        </li>
+                    </ul>
+                    <h4>BackEnd</h4>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When Click On Menu Item, system must retrieve Menu Item information from Database
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Loops and Modes</h3>
+                </div>
+                <div class="small-box-text">
+                    <!-- <h2>Modes</h2> -->
+                    <!-- <h3>On Clicked</h3> -->
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            N/A
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="triggers-micro">Quantity section</h2>
+        <div class="sub-box">
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Triggers</h3>
+                </div>
+                <div class="small-box-text">
+                    <ul class="small-box-items">
+                        <!-- <h3>On-Hover</h3> -->
+                        <li class="small-box-list-items">
+                            Hover On/Off Plus/Minus Buttons
+                        </li>
+                        <li class="small-box-list-items">
+                            Click On/Off Plus Button 
+                        </li>
+                        <!-- <h3>On-Click</h3> -->
+                        <li class="small-box-list-items">
+                            Click On/Off Minus Button 
+                        </li>
+                        <li class="small-box-list-item">
+                            Click On/Off Quantity Box 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Rules</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>Hover On/Off Plus/Minus Buttons</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from default to pointer 
+                        </li>
+                    </ul>
+                    <h3>Click On/Off Plus Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Button Color Change from ( HexCode) to (HexCode)
+                        </li>
+                        <li class="small-box-list-items">
+                            When clicked, button (either translates or drop shadow)
+                        </li>
+                        <li class="small-box-list-items">
+                            When clicked off button, it goes back to original state.
+                        </li>
+                    </ul>
+                    <h3>Click On/Off Minus Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Button Color Change from ( HexCode) to (HexCode)
+                        </li>
+                        <li class="small-box-list-items">
+                            When clicked, button (either translates or drop shadow). When clicked off button, it goes back to original state.
+                        </li>
+                        <li class="small-box-list-items">
+                            When button is clicked, the quantity decreases
+                        </li>
+                    </ul>
+                    <h3>Hover On/Off Quantity Box</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor Change from Default to Pointer
+                        </li>
+                    </ul>
+                    <h3>Hover On/Off Quantity Box</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor change from Pointer to Text
+                            Quantity Box has a Border of (#)px solid (HexCode)
+                            Can change quantity by typing number in
+                        </li>
+                        <li class="small-box-list-items">
+                            Quantity Box has a Border of (#)px solid (HexCode)
+                        </li>
+                        <li class="small-box-list-items">
+                            Can change quantity by typing number in
+                        </li>
+                    </ul>
+                    <h3>Hover On/Off Quantity Box</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor Change from text to Pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            Quantity Box's border goes back to original state
+                        </li>
+                    </ul>
+                    <h4>BackEnd</h4>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When quantity is changed, the system will save the quantity the user selects and send the information to the food truck.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Front-End</h2>
+                    <h3>Hover On/Off Plus/Minus Buttons</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor changes from default to pointer 
+                        </li>
+                    </ul>
+                    <h3>Click On/Off Plus Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Button Color Change from ( HexCode) to (HexCode)
+                        </li>
+                        <li class="small-box-list-items">
+                            When clicked, button (either translates or drop shadow)
+                        </li>
+                        <li class="small-box-list-items">
+                            When clicked off button, it goes back to original state.
+                        </li>
+                    </ul>
+                    <h3>Click On/Off Minus Button</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Button Color Change from ( HexCode) to (HexCode)
+                        </li>
+                        <li class="small-box-list-items">
+                            When clicked, button (either translates or drop shadow). When clicked off button, it goes back to original state.
+                        </li>
+                        <li class="small-box-list-items">
+                            When button is clicked, the quantity decreases
+                        </li>
+                    </ul>
+                    <h3>Hover On/Off Quantity Box</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor Change from Default to Pointer
+                        </li>
+                    </ul>
+                    <h3>Hover On/Off Quantity Box</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor change from Pointer to Text
+                            Quantity Box has a Border of (#)px solid (HexCode)
+                            Can change quantity by typing number in
+                        </li>
+                        <li class="small-box-list-items">
+                            Quantity Box has a Border of (#)px solid (HexCode)
+                        </li>
+                        <li class="small-box-list-items">
+                            Can change quantity by typing number in
+                        </li>
+                    </ul>
+                    <h3>Hover On/Off Quantity Box</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Cursor Change from text to Pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            Quantity Box's border goes back to original state
+                        </li>
+                    </ul>
+                    <h4>BackEnd</h4>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            When quantity is changed, the system will save the quantity the user selects and send the information to the food truck.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Loops and Modes</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Modes</h2>
+                    <!-- <h3>On Clicked</h3> -->
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            N/A
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

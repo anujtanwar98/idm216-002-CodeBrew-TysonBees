@@ -1,0 +1,209 @@
+:root{
+    --main-color: #ebd2ff;
+    --secondary-color: #000000;
+    --third-color: #000000;
+    --white-color: #fff;
+    --black-color: #000;
+    --view-area-color: #ffa1a1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'bank-gothic-medium';
+    src: url('asset/fonts/bank-gothic-medium.woff2');
+}
+@font-face {
+    font-family: 'bank-gothic-regular';
+    src:url('asset/fonts/bank-gothic-regular.woff2');
+}
+@font-face {
+    font-family: 'tomkin-medium';
+    src: url('asset/fonts/tomkin-medium.woff2');
+}
+@font-face {
+    font-family: 'tomkin-regular';
+    src:url('asset/fonts/tomkin-regular.woff2');
+}
+
+
+/* media screen ends */
+
+/* header */
+
+header{
+    font-family: bank-gothic-regular, sans-serif;
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--white-color);
+}
+
+/* main */
+.main {
+    background-color: var(--main-color);
+}
+.triggers-micro{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: tomkin-medium, sans-serif;
+}
+.sub-box {
+    font-family: tomkin-regular, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 2rem 0;
+    margin: auto 0;
+    /* align-content: center; */
+}
+.small-boxes {
+    width: 20rem;
+    border-radius: .75rem;
+    margin: 2rem .5rem;
+    align-content: center;
+}
+.small-box-title {
+    color: var(--main-color);
+    padding: 0.75rem;
+    border-radius: .75rem .75rem 0 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.25rem;
+}
+.small-box-text {
+    padding: 1rem 2rem;
+    border: 3px var(--secondary-color) solid;
+    border-top: none;
+    border-radius: 0 0 .75rem .75rem;
+    height: 100%;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--third-color);
+}
+.small-box-text li {
+    /* padding: 0 1rem; */
+    text-align: left;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    
+    .logo-icon {
+        max-width: 150px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    .ups-link {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+/* adding padding and styles for micro interactions area */
+
+.viewing-area {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--view-area-color);
+}
+.quantity-container {
+    padding: 1rem;
+}
+.view-button {
+    padding: 1rem;
+}
+
+/* show micro */
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.quantity-input:hover {
+    border: 2px solid blue;
+}
+
+.quantity-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.quantity-container button:active {
+    transform: scale(0.95);
+}
+
+.quantity-container button.increment {
+    margin-left: 10px;
+}
+
+.quantity-container button:hover {
+    background-color: blue;
+}
+
+.quantity-container button.increment:active {
+    box-shadow: 0 0 10px blue;
+}
+
+.quantity-container button.decrement:active {
+    box-shadow: 0 0 10px blue;
+}
+
+/* for view button */
+
+#my-button {
+    background-color: #00bfff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#my-button:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+  
+#my-button.clicked {
+    background-color: #0a2450;
+    color: #fff;
+}
