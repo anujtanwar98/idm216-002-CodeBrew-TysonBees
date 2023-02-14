@@ -139,6 +139,7 @@ header{
 .quantity-input {
     width: 50px;
     text-align: center;
+    background-color: #FFF1D9;
     border: 2px solid black;
     border-radius: 5px;
     margin: 0 10px;
@@ -149,14 +150,15 @@ header{
 }
 
 .quantity-input:hover {
-    border: 2px solid blue;
+    border: 2px solid #463A6C;
 }
 
+
 .quantity-container button {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 50%;
+    background-color: #FFF1D9;
+    color: #463A6C;
+    border: 2px solid #463A6C;
+    border-radius: 8px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -176,34 +178,41 @@ header{
 }
 
 .quantity-container button:hover {
-    background-color: blue;
+    background-color: #463A6C;
+    color: #FFF1D9;
 }
 
 .quantity-container button.increment:active {
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px #463A6C;
 }
 
 .quantity-container button.decrement:active {
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px #463A6C;
 }
 
 /* for view button */
 
 #my-button {
-    background-color: #00bfff;
-    color: #fff;
+    background-color: #FFF1D9;
+    border: 2px solid #FFCE71;
+    color: #463A6C;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease;
-    border-radius: 5px;
+    border-radius: 36px;
     padding: 10px 20px;
 }
 
 #my-button:hover {
-    background-color: #0080ff;
+    background-color: #FFCE71;
     color: #fff;
 }
   
 #my-button.clicked {
-    background-color: #0a2450;
+    background-color: #f6b338;
     color: #fff;
+}
+
+#my-button:active{
+    transform: translateY(2px);
 }
