@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+header {
+    background-color: #EFC372;
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;  
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #463A6C;
+  transition: color 0.3s ease;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color: #463A6C;;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #463A6C;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #FFF1D9;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.hours {
+    background-color: #FFF1D9;
+    text-align: center;
+    margin: 0;
+    height: 57.44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/graphics/bee-path.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.hero {
+    background-color: #463A6C;
+    text-align: center;
+    color: white;
+    height: 293px;
+    margin: 0;
+    padding: 0;
+    background-image: url("/graphics/honeycomb-hero.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right 35% bottom 35%;
+}
+
+.hero-title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.hero-btn {
+    height: 69.56px;
+    width: 272px;
+    color: #463A6C;
+    border-radius: 36px;
+}
+
+.menu-btn {
+    border-color: #FFCE71;
+    background-color: #FFF1D9;
+    margin-bottom: 16px;
+}
+
+.login-btn {
+    border-color: #FFF1D9;
+    background-color: #EFC372;
+    margin-bottom: 32px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item1 {
+    margin-right: 32px;
+}
+
+.menu-item-text {
+    max-width: 124px;
+    color: black;
+}
+
+footer {
+    background-color: #FFF1D9;
+    padding: 24px 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.progress {
+    background-color: #C0BCD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 91.56px;
+}
+
+.progress-text {
+    color: #463A6C;
+}
+
+.overlay {
+    background-color: #463A6C;
+    background-image: url(/graphics/honeycomb-item-overlay.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.close-btn {
+    float: right;
+    padding: 24px;
+}
+
+.food-img-overlay {
+    position: absolute;
+    z-index: 3;
+    top: 29px;
+    left: 38px;
+    margin: 0 auto;
+}
+
+.yellow-overlay {
+    position: absolute;
+    top: 107px;
+    margin-top: 108px;
+    background-color: #FFF1D9;
+    color: black;
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+    /* padding: 24px; */
+}
+
+.special-instructions {
+    height: 126.17px;
+    width: 320px;
+}
+
+.add-order-btn {
+    width: 279px;
+    height: 54px;
+    background-color: #463A6C;
+    color: white;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.overlay-quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-quantity {
+    margin: 0 24px;
+}
+
+.overlay-total {
+    float: left;
+    margin-right: 132px;
+}
+
+.overlay-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.overlay-btn {
+    border: 1px solid #463A6C;
+    border-radius: 8px;
+    height: 23.83px;
+    width: 26.41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
