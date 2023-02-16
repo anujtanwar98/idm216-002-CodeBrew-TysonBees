@@ -136,7 +136,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/graphics/bee-path.png");
+    background-image: url("graphics/bee-path.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -173,7 +173,7 @@ p {
     height: 293px;
     margin: 0;
     padding: 0;
-    background-image: url("/graphics/honeycomb-hero.png");
+    background-image: url("graphics/honeycomb-hero.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: right 35% bottom 35%;
@@ -360,7 +360,7 @@ top: 507px;
 
 .overlay {
     background-color: #463A6C;
-    background-image: url(/graphics/honeycomb-item-overlay.png);
+    background-image: url("graphics/honeycomb-item-overlay.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
