@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 *{
   box-sizing: border-box;
@@ -159,8 +159,8 @@ h4 {
 }
 
 p {
-    font-size: 14px;
-}
+    font-size: 16px;
+} 
 
 footer {
     background-color: #FFF1D9;
@@ -229,7 +229,7 @@ border-radius: 5px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 16px;
 line-height: 21px;
 position: absolute;
 border: none;
@@ -269,7 +269,7 @@ Height:17px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
-font-size: 14px;
+font-size: 16px;
 line-height: 21px;
     
 color: #000000;
@@ -372,7 +372,7 @@ color: #000000;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 16px;
 line-height: 21px;
 text-align: right;
     
@@ -410,7 +410,14 @@ top: 755px;
 left: 79px;
 right: 79px;
 bottom: 23px;
+transition: background-color 0.3s ease;
 
+}
+.checkout:hover {
+    background-color: #5c4c8e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .checkout-text{
@@ -449,14 +456,14 @@ margin-left:45px;
 margin-right:45px;
 }
 
-.text-field{
+/* .text-field{
 border: 1px solid #000000;
 border-radius: 5px;
 padding: 5px 50px 5px 15px;
 color:#FFFCF7;
 margin-top:0px;
 width:230px;
-}
+} */
 
 .remove-margin-bottom{
 margin-bottom: 0px;
@@ -506,7 +513,18 @@ Height:54px;
     Width:231px;
     Height:54px;
     margin-top:15px;
-    }
+    transition: background-color 0.3s ease;
+
+}
+
+.signup-button:hover {
+  background-color:#feda9b;
+  color:#463A6C;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
 
 .bg-bottom{
 width:394px;
@@ -526,8 +544,8 @@ bottom:0;
 .login-button-filled{
 border: 3px solid #463A6C;
 border-radius: 30px;
-background-color:#463A6C;
-color:white;
+/* background-color:#463A6C; */
+color:#463A6C;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
@@ -535,7 +553,16 @@ font-size: 20px;
 line-height: 30px;
 text-align: center;
 Width:231px;
-Height:54px;}
+Height:54px;
+transition: background-color 0.3s ease;
+}
+
+.login-button-filled:hover {
+  background-color: #5c4c8e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
 .total-payment{
 border: 1px solid #463A6C;
@@ -587,12 +614,16 @@ display: flex;
 justify-content:space-between;
 border: 2px solid #463A6C;
 border-radius: 10px;
+
 width:300px;
 text-align:center;
 padding: 6px 14px 6px 14px;
 margin:auto;
 height:40px;
 margin-bottom: 20px;
+}
+.venmo-flex:hover{
+  cursor: pointer;
 }
 
 .venmo{
@@ -602,7 +633,7 @@ font-weight: 600;
 font-size: 16px;
 line-height: 24px;
 padding-top:6px;
-color: #000000;
+/* color: #000000; */
 }
 
 .complete-order-disbaled{

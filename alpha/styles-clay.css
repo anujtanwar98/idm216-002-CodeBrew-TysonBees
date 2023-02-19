@@ -170,7 +170,7 @@ h4 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .hero {
@@ -363,6 +363,14 @@ top: 507px;
     text-align: center;
     Width:231px;
     Height:54px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover{
+    background-color: #5c4c8e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .overlay {
@@ -396,8 +404,8 @@ top: 507px;
     padding-right: 24px;
     padding-bottom: 16px;
     border-radius: 20px;
-    /* padding: 24px; */
-}
+    
+} 
 
 .special-instructions {
     height: 126.17px;
