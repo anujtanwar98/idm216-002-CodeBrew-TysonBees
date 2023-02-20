@@ -226,11 +226,13 @@ font-size: 28px;
 .order-confirm-text {
     text-align: center;
     font-size: 20px;
+    margin: 32px 0;
 }
 
 .order-text {
     text-align: center;
     font-size: 20px;
+    margin: 32px 0;
 }
 
 .truck-img {
@@ -457,3 +459,11 @@ top: 507px;
     justify-content: center;
 }
 
+/* New changes to alpha */
+.menu-content, .menu-top {
+    padding: 16px;
+}
+
+.menu-item-container {
+    margin: 16px 0;
+}

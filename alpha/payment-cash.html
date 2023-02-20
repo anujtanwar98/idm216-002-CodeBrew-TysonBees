@@ -28,38 +28,47 @@
         <img src="graphics/logo.png" alt="Tyson Bees logo" height="46px">
         <img src="graphics/cart-icon-2.png" alt="shopping cart icon" height="46px">
 </header>
+
 <h1 class = 'payment' >Payment</h1>
-<div class ="total-payment"> 
-<div class ="flex">
-    <div class="description">Subtotal</div>
-    <div class="price-cart">$20.00</div>
-</div>
-<div class ="flex">
-    <div class="description">Tax</div>
-    <div class="price-cart">$0.60</div>
-</div>
-<div class ="flex">
-    <div class="description">Total</div>
-    <div class="price-cart">$20.60</div>
-</div>
+
+<div class ="total total-payment"> 
+    <div class ="flex">
+        <div class="description">Subtotal</div>
+        <div class="price-cart">$20.00</div>
+    </div>
+    <div class ="flex">
+        <div class="description">Tax</div>
+        <div class="price-cart">$0.60</div>
+    </div>
+    <div class ="flex">
+        <div class="description">Total</div>
+        <div class="price-cart">$20.60</div>
+    </div>
 </div>
 
 <h3 class="payment-options">Payment Options</h3>
 
-<div class ="venmo-cash"> 
-    <div class ="venmo-flex">
-        <div class="venmo">Venmo</div>
-        <div><img src="graphics/Vectorvenmo.png" class="venmo-image" alt="venmo logo"> </div>
-    </div>
-    <div class ="venmo-flex-pay">
-        <div class="venmo-pay">Pay Cash at Truck</div>
-        <div ><img src="graphics/mdi_cashwhite-cash.png" class="cash-image" alt="cash image" > </div>
-    </div>
+<div class="payment-container">
+    <div class="payment-method">
+        <p class="payment-method-text">Venmo</p>
+        <img src="graphics/Vectorvenmo.png" class="payment-method-image" alt="venmo logo">
     </div>
 
-<a href="confirmation.html">
-    <button class="complete-order-active">Complete Order</button>
-</a>
+    <a href="payment-cash.html">
+        <div class="payment-method payment-method-selected">
+            <p class="payment-method-text">Pay Cash at Truck</p>
+            <img src="graphics/mdi_cashwhite-cash.png" class="payment-method-image payment-cash" alt="cash image">
+        </div>
+    </a>
+</div>
+
+<div>
+    <a href="confirmation.html"
+        <button class = "checkout order-btn"> 
+            <span class ='checkout-text order-text'>Complete Order</span>
+        </button>
+    </a>
+</div>
 
 
     

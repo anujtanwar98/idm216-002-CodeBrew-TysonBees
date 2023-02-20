@@ -31,21 +31,28 @@
 
         
     <h1 class = 'cart' >Cart</h1>
-    <div>
-        <button class='button' >Modify Order Time:</button>
-        <h3 class = 'ASAP'> ASAP</h3>
+    <div class="select-time">
+        <h3>Modify Order Time:</h3>
+        <h3 class = 'asap'> ASAP</h3>
     </div>
+
     <div class = 'item'>
-        <h4 class = 'taco'>Thai Basil Chicken Taco</h4>
-        <p class = 'price'>$10.00</p>
 
         <img src="graphics/taco.png" class="menu-image" alt="thai basil chicken taco ">
-        <img src="graphics/Vector.png" class="close" alt="close button">
-        <img src="graphics/quantity-button.png" class="quantity-button"  alt="quanity button">
+
+        <div class="item-text">
+            <h4>Thai Basil Chicken Taco</h4>
+            <p'>$10.00</p>
+        </div>
+
+        <div class="item-btns">
+            <img src="graphics/Vector.png" class="close" alt="close button">
+            <img src="graphics/quantity-button.png" class="quantity-button"  alt="quanity button">
+        </div>
 
     </div>
     <button class = "add-more"> 
-        <span ><img src="graphics/Vectoradd-items.png" class=" button-icon" alt="add items icons" > </span>
+        <span class="button-icon-container"><img src="graphics/Vectoradd-items.png" class=" button-icon" alt="add items icons" > </span>
         <span class ='button-text'>Add Item</span>
         
     </button>
@@ -67,7 +74,6 @@
         <a href="login.html">
             <button class = "checkout"> 
                 <span class ='checkout-text'>Checkout</span>
-                
             </button>
         </a>
     </div>

@@ -237,6 +237,10 @@ p {
     margin: 15px 0 15px 20px;
 }
 
+.menu-item {
+    margin: 8px 0;
+}
+
 .menu-item-container {
     display: flex;
     flex-direction: row;
@@ -293,23 +297,25 @@ a {
     background-size: 100%;
 }
 
-.close-btn {
+.close-btn-container {
     float: right;
-    padding: 24px;
+    padding: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 }
 
 .food-img-overlay {
-    position: absolute;
+    /* position: absolute; */
     z-index: 3;
-    top: 29px;
-    left: 38px;
-    margin: 0 auto;
+    /* top: 29px;
+    left: 38px; */
+    /* margin: 0 auto; */
+    margin-bottom: -108px;
+    display: flex;
 }
 
 .yellow-overlay {
-    position: absolute;
-    top: 107px;
-    margin-top: 108px;
     background-color: #FFF1D9;
     color: black;
     padding-top: 80px;
@@ -317,8 +323,32 @@ a {
     padding-right: 24px;
     padding-bottom: 16px;
     border-radius: 20px;
-    /* padding: 24px; */
 }
+
+.overlay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yellow-overlay-container {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+/* 
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+} */
 
 .special-instructions {
     height: 126.17px;
@@ -377,3 +407,4 @@ a {
     align-items: center;
     justify-content: center;
 }
+
