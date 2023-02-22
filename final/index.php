@@ -17,14 +17,22 @@ include_once __DIR__ . '/_components/header.php';
     <img src="<?php echo site_url(); ?>/dist/images/filter.png" width="40" height="me-auto" alt="">
   </div>
 </div>
-<div class="card text-bg-dark">
-  <!-- <img src="<?php echo site_url(); ?>/dist/images/temp-image.jpg" width="400" height="me-auto" class="card-img d-inline-block align-text-center" alt=""> -->
-  <div class="card-img-overlay d-flex col">
-    <a class="text-white text-center" href="<?php echo site_url(); ?>/admin/menu/index.php" style="text-decoration: none;">
-      <button type="button" class="btn btn-light">View Menu</button>
+<div class="d-flex card card-honey">
+  <div class="honey-comb-back">
+    <img src="<?php echo site_url(); ?>/dist/images/honeycomb-hero.png" width="500" height="me-auto" alt="">
+    <!-- class="card-img d-inline-block align-text-center" -->
+  </div>
+  <h1 class="card-img-overlay text-center welcome-main-title" style="color:#fff">Welcome to Tyson Bees</h1>
+  <div class="card-img-overlay d-flex col button-links-home">
+    <a href="<?php echo site_url(); ?>/menu.php" style="text-decoration: none;">
+      <button class="hero-btn menu-btn">
+          <h2>View Menu</h2>
+      </button>
     </a>
-    <a class="text-white text-center" href="#" style="text-decoration: none;">
-      <button type="button" class="btn btn-light">Login</button>
+    <a href="#" style="text-decoration: none;">
+      <button class="hero-btn login-btn">
+          <h2>Log In</h2>
+      </button>
     </a>
   </div>
 </div>
