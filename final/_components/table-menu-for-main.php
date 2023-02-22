@@ -15,6 +15,7 @@ if (!isset($menu)) {
         <th scope="col">Description</th>
         <th scope="col">Allergen info</th>
         <th scope="col">Nurti Facts</th>
+        <th scope="col">Dietary Restrictions</th>
         <!-- <th scope="col">
           <span class="sr-only">Edit</span>
         </th>
@@ -41,6 +42,7 @@ if (!isset($menu)) {
               <td>{$menu_item['description']}</td>
               <td>{$menu_item['allergen_info']}</td>
               <td>{$menu_item['nutri_facts']}</td>
+              <td>{$menu_item['diet_res']}</td>
               
               
             </tr>";

@@ -72,6 +72,11 @@ if ($result->num_rows > 0) {
                 <input type="text" name="nutri_facts"
                   value="<?php echo $menu_item['nutri_facts']?>">
               </div>
+              <div class="block">
+                <label for="">Dietary Restrictions</label>
+                <input type="text" name="diet_res"
+                  value="<?php echo $menu_item['diet_res']?>">
+              </div>
               <!-- <div class=" block">
                 <label for="">Steps</label>
                 <textarea class="js-tinymce" type="text" name="steps"><?php echo $menu_item['steps']?></textarea>

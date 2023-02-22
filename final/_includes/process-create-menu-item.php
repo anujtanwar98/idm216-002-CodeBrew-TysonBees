@@ -13,6 +13,7 @@ $price = sanitize_value($_POST['price']);
 $description = sanitize_value($_POST['description']);
 $allergen_info = sanitize_value($_POST['allergen_info']);
 $nutri_facts = sanitize_value($_POST['nutri_facts']);
+$diet_res = sanitize_value($_POST['diet_res']);
 
 $result = add_menu_item(
     $menu_category,
@@ -21,7 +22,8 @@ $result = add_menu_item(
     $price,
     $description,
     $allergen_info,
-    $nutri_facts
+    $nutri_facts,
+    $diet_res
 );
 
 // Check there are no errors with our SQL statement

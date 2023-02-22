@@ -13,10 +13,11 @@ $price = sanitize_value($_POST['price']);
 $description = sanitize_value($_POST['description']);
 $allergen_info = sanitize_value($_POST['allergen_info']);
 $nutri_facts = sanitize_value($_POST['nutri_facts']);
+$diet_res = sanitize_value($_POST['diet_res']);
 $id = sanitize_value($_POST['id']);
 
 // Create a SQL statement to insert the data into the database
-$query = "UPDATE menu SET menu_category = '{$menu_category}', images = '{$images}', name = '{$name}', price = '{$price}', description = '{$description}', allergen_info = '{$allergen_info}', nutri_facts = '{$nutri_facts}' WHERE id = {$id}";
+$query = "UPDATE menu SET menu_category = '{$menu_category}', images = '{$images}', name = '{$name}', price = '{$price}', description = '{$description}', allergen_info = '{$allergen_info}', nutri_facts = '{$nutri_facts}', diet_res = '{$diet_res}' WHERE id = {$id}";
 
 // Run the SQL statement
 $result = mysqli_query($db_connection, $query);

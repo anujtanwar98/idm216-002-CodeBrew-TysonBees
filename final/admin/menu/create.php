@@ -58,6 +58,10 @@ include_once __DIR__ . '/../../_components/header.php';
                                 <label for="">Nutritional Facts</label>
                                 <input type="text" name="nutri_facts">
                             </div>
+                            <div class="block">
+                                <label for="">Dietary Restrictions</label>
+                                <input type="text" name="diet_res">
+                            </div>
                             <!-- <div class="block">
                                 <label for="">Steps</label>
                                 <textarea class="js-tinymce" name="steps" id="" cols="30" rows="10"></textarea>

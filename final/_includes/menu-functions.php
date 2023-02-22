@@ -21,14 +21,15 @@ function get_menu_item()
  * @param  string $description - description of the menu item
  * @param  string $allergen_info - allergen info of the menu item
  * @param  string $nutri_facts - nutri facts of the menu item
+ * @param  string $diet_res - diet restrictions of the menu item
  * @return object - mysqli_result
  */
-function add_menu_item($menu_category, $images, $name, $price, $description, $allergen_info, $nutri_facts)
+function add_menu_item($menu_category, $images, $name, $price, $description, $allergen_info, $nutri_facts, $diet_res)
 {
     global $db_connection;
     $query = 'INSERT INTO menu';
-    $query .= ' (menu_category, images, name, price, description, allergen_info, nutri_facts)';
-    $query .= " VALUES ('$menu_category', '$images', '$name', '$price', '$description', '$allergen_info', '$nutri_facts')";
+    $query .= ' (menu_category, images, name, price, description, allergen_info, nutri_facts, diet_res)';
+    $query .= " VALUES ('$menu_category', '$images', '$name', '$price', '$description', '$allergen_info', '$nutri_facts', '$diet_res')";
 
     $result = mysqli_query($db_connection, $query);
     return $result;
