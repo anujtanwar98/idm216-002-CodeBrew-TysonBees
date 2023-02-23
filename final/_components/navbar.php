@@ -26,7 +26,7 @@
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/contact.php">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/index.php">Admin</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
         </li>
       </ul>
     </div>

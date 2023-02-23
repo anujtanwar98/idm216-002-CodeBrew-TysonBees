@@ -47,4 +47,3 @@ $menu = get_menu_item();
 </main>
 
 
-<?php include_once __DIR__ . '/../../_components/footer.php'; ?>
