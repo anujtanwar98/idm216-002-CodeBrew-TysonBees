@@ -212,3 +212,62 @@
 }
 
 /* honey comb backg end */
+
+/* footer start */
+
+.main-footer {
+    background-color: var(--ter-color);
+}
+.footer-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-second-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+.footer-address p {
+    margin: 2px;
+}
+
+.footer-hours p {
+    margin: 2px;
+}
+
+
+/* footer end */
+
+/* featured items start */
+
+.featured-items-title {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.menu-item-title {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.menu-item-images {
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* featured items end */

@@ -5,6 +5,12 @@ include_once __DIR__ . '/_components/header.php';
 ?>
 <?php include_once __DIR__ . '/_components/navbar.php'; ?>
 
+<?php 
+    $menuItem_byId = array(3, 7, 15, 19);
+    // $query = 'SELECT * FROM menu WHERE id = 1';
+    $query = "SELECT * FROM menu WHERE id IN (" . implode(",", $menuItem_byId) . ")";
+    $result = mysqli_query($db_connection, $query);
+?>
 
 <div class="text-center p-2 hours">
   <img src="<?php echo site_url(); ?>/dist/images/bee-back1.png" alt="" width="100%" height="me-auto">
@@ -36,11 +42,28 @@ include_once __DIR__ . '/_components/header.php';
     </a>
   </div>
 </div>
-<br>
+<!-- <br>
 <br>
 <h1>
   This is food ordering app from tyson bees foodtruck
-</h1>
+</h1> -->
+
+
+<?php
+ echo "<h2 class='featured-items-title'>Featured Items</h2>";
+ echo "<div class='featured-items'>";
+ 
+ while ($row = mysqli_fetch_assoc($result)) {
+     // Display each item as a card or tile
+     echo "<div class='featured-item'>";
+     echo "<img class='menu-item-images' src='" . $row['images'] . "' alt='" . $row['name'] . "'>";
+     echo "<h3 class='menu-item-title'>" . $row['name'] . "</h3>";
+      echo "<p>" . $row['nutri_facts'] . "</p>";
+     echo "</div>";
+ }
+ 
+ echo "</div>";
+?>
 
 
 <?php include_once __DIR__ . '/_components/footer.php'; ?>
