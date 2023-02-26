@@ -3,7 +3,6 @@ include_once __DIR__ . '/../app.php';
 $page_title = 'Login';
 include_once __DIR__ . '/../_components/header.php';
 ?>
-<?php include_once __DIR__ . '/../_components/navbar.php'; ?>
 
 <div class="login-main-container">
   <div class="honey-comb-image-top-container">
@@ -19,12 +18,12 @@ include_once __DIR__ . '/../_components/header.php';
   <div class="login-form-container">
     <form method="POST" action="<?php echo site_url() . '/_includes/login-process.php' ?>">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <label class="email-title" for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1 email-input-subs" aria-describedby="emailHelp" placeholder="email" required>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" required>
+        <label class="password-title" for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1 password-input-subs" placeholder="********" required>
       </div>
       <!-- <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -36,26 +35,6 @@ include_once __DIR__ . '/../_components/header.php';
         </button>
       </div>
     </form>
-    <!-- <form class="login-form-wrapper" method="POST" action="<?php echo site_url(); ?>/auth/login.php">
-        <div>
-          <label class="label-title">Username:</label>
-        </div>
-        <div>
-          <input class="input-text" type="text" name="username" required>
-        </div>
-        <div>
-          <label class="label-title">Password:</label>
-        </div>
-        <div>
-          <input class="input-text" type="password" name="password" required>
-        </div>
-
-        <div class="login-btn-container">
-          <button class="hero-btn menu-btn" type="submit">
-            <h3>Login</h3>
-          </button>
-        </div>
-    </form> -->
   </div>
   <div class="honey-comb-image-bottom-container">
     <img sticky="bottom" class="honey-comb-image-bottom" src="<?php echo site_url(); ?>/dist/images/login-bottom-honey.png" width="500" height="me-auto" alt="">
