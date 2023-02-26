@@ -17,12 +17,12 @@ include_once __DIR__ . '/_components/header.php';
   <span class="overlay-text">Open Until 5:00 P.M.</span>
   <img src="<?php echo site_url(); ?>/dist/images/bee-back2.png" alt="" width="100%" height="me-auto">
 </div>
-<div class="d-flex wel-box">
+<!-- <div class="d-flex wel-box">
   <h2 class="welcome-title">Welcome</h2>
   <div class="filter-image">
     <img src="<?php echo site_url(); ?>/dist/images/filter.png" width="40" height="me-auto" alt="">
   </div>
-</div>
+</div> -->
 <div class="d-flex card card-honey">
   <div class="honey-comb-back">
     <img src="<?php echo site_url(); ?>/dist/images/honeycomb-hero.png" width="500" height="me-auto" alt="">
@@ -35,7 +35,7 @@ include_once __DIR__ . '/_components/header.php';
           <h2>View Menu</h2>
       </button>
     </a>
-    <a href="#" style="text-decoration: none;">
+    <a href="<?php echo site_url(); ?>/auth/login.php" style="text-decoration: none;">
       <button class="hero-btn login-btn">
           <h2>Log In</h2>
       </button>

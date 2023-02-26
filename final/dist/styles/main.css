@@ -8,6 +8,7 @@
     --main-color: #463A6C;
     --sec-color: #EFC372;
     --ter-color: #FFF1D9;
+    --fourth-color: #FFFCF7;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -271,3 +272,77 @@
 
 
 /* featured items end */
+
+
+/* login page start */
+
+.login-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: var(--fourth-color);
+    /* padding: 20px; */
+}
+
+/* .honey-comb-image-top-container {
+    top: 0;
+    position: fixed;
+} */
+.honey-comb-image-bottom-container {
+    bottom: 0;
+    /* position: fixed; */
+}
+
+.truck-image {
+    max-width: 230px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-page-title {
+    margin: 0;
+}
+
+.login-page-btn {
+    border: 3px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--main-color);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    Width:231px;
+    Height:54px;
+    transition: background-color 0.3s ease;
+}
+
+.login-page-btn:hover {
+    background-color: #5c4c8e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* login page end */
