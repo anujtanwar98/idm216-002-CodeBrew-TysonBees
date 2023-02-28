@@ -1,7 +1,7 @@
 # idm216-002-CodeBrew-TysonBees
 
 - DEV: https://byanuj.com/idm216/dev/
-- FINAL LIVE: https://byanuj.com/idm216/final/
+- FINAL LIVE: https://byanuj.com/idm216/final/index.php
 - TEAM LIVE: https://byanuj.com/idm216/team/
 - Project Page: https://byanuj.com/idm216/project/
 
