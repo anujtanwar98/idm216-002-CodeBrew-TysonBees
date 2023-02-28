@@ -19,7 +19,7 @@ if ($user) {
         'first_name' => $user['first_name'],
         'last_name' => $user['last_name'],
     ];
-    redirect_to('/');
+    redirect_to('/index.php');
 } else {
     $error_message = 'User was not updated: ' . mysqli_error($db_connection);
     redirect_to('/auth/login?error=' . $error_message);
