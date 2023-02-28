@@ -4,6 +4,9 @@
  * logic for the application.
  */
 
+
+session_start();
+
 // An array of values that will determine if you're working locally or on a production server.
 // @link https://stackoverflow.com/questions/2053245/how-can-i-detect-if-the-user-is-on-localhost-in-php
 $whitelist_host = ['127.0.0.1', '::1'];
@@ -29,3 +32,14 @@ if (in_array($_SERVER['REMOTE_ADDR'], $whitelist_host)) {
 include_once __DIR__ . '/_includes/database.php';
 include_once __DIR__ . '/_includes/helper-functions.php';
 include_once __DIR__ . '/_includes/menu-functions.php';
+include_once __DIR__ . '/_includes/user-functions.php';
+
+
+// Check if URL has "/admin" in it. We can assume that if it does,
+// we're in the admin area and the user needs to be logged in
+if (strpos($_SERVER['REQUEST_URI'], '/admin') !== false) {
+    if (!is_user_logged_in()) {
+        redirect_to('/auth/login.php');
+    }
+}
+

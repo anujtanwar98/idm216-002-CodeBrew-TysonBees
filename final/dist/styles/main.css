@@ -335,7 +335,19 @@
     padding: 20px;
 }
 
+.signup-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+}
+
 .login-page-title {
+    margin: 0;
+}
+.signup-page-title {
     margin: 0;
 }
 
@@ -358,6 +370,29 @@
 .login-page-btn:hover {
     background-color: #5c4c8e;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-page-btn {
+    border: 3px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--main-color);
+    background-color: var(--fourth-color);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    Width:231px;
+    Height:54px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-page-btn:hover {
+    background-color: var(--sec-color);
+    color: var(--main-color);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

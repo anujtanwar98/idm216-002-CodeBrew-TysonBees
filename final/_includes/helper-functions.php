@@ -69,3 +69,11 @@ function price_with_dollar_sign($price)
 {
     return '$' . number_format($price, 2);
 }
+
+/**
+ * Check if user is logged in via session
+ */
+function is_user_logged_in()
+{
+    return isset($_SESSION['user']);
+}

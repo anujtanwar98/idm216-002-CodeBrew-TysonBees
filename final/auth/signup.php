@@ -1,6 +1,6 @@
 <?php
 include_once __DIR__ . '/../app.php';
-$page_title = 'Login';
+$page_title = 'Sign Up';
 include_once __DIR__ . '/../_components/header.php';
 ?>
 
@@ -16,36 +16,34 @@ include_once __DIR__ . '/../_components/header.php';
     <img class="truck-image" src="<?php echo site_url(); ?>/dist/images/truck-loading.png" width="400" height="me-auto" alt="">
   </div>
   <div class="login-form-container">
-    <form method="POST" action="<?php echo site_url() . '/_includes/process-login.php' ?>">
-      <div class="mb-3">
-        <label class="email-title" for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1 email-input-subs" aria-describedby="emailHelp" placeholder="email" required name="email">
-      </div>
-      <div class="mb-3">
-        <label class="password-title" for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1 password-input-subs" placeholder="********" required name="password">
-      </div>
+    <form method="POST" action="<?php echo site_url() . '/_includes/process-create-users.php' ?>">
+        <div class="mb-3">
+            <label class="email-title" for="" class="form-label">First Name</label>
+            <input type="text" class="form-control" id=" email-input-subs" aria-describedby="emailHelp" placeholder="First Name" required name="first_name">
+        </div>
+        <div class="mb-3">
+            <label class="email-title" for="" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id=" email-input-subs" aria-describedby="emailHelp" placeholder="Last Name" required name="last_name">
+        </div>
+        <div class="mb-3">
+            <label class="email-title" for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1 email-input-subs" aria-describedby="emailHelp" placeholder="email" required name="email">
+        </div>
+        <div class="mb-3">
+            <label class="password-title" for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1 password-input-subs" placeholder="********" required name="password">
+        </div>
       <!-- <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div> -->
       <div class="login-btn-container">
         <button class="login-page-btn" type="submit">
-          <h3 class="login-page-title">Login</h3>
+          <h3 class="login-page-title">Sign Up</h3>
         </button>
       </div>
-      <!-- <div class="signup-btn-container">
-        <a class="signup-page-btn" href="<?php echo site_url(); ?>/auth/signup.php" style="text-decoration: none;">
-          <h3 class="signup-page-title">Sign Up</h3>
-        </a>
-      </div> -->
     </form>
   </div>
-  <a class="signup-btn-container" href="<?php echo site_url(); ?>/auth/signup.php" style="text-decoration: none;">
-    <button class="signup-page-btn" >
-      <h3 class="signup-page-title">Sign Up</h3>
-    </button>
-  </a>
   <div class="honey-comb-image-bottom-container">
     <img sticky="bottom" class="honey-comb-image-bottom" src="<?php echo site_url(); ?>/dist/images/login-bottom-honey.png" width="500" height="me-auto" alt="">
   </div>
