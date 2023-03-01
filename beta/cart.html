@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyson Bees | Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="graphics/favicon.png">
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="rewards.html"><li>Rewards</li></a>
+                <a href="order-history.html"><li>Order History</li></a>
+            </ul>
+            </div>
+        </nav>
+
+        <img src="graphics/logo.png" class="header-img" alt="Tyson Bees logo">
+        <a href="cart.html">
+            <img src="graphics/cart-icon-2.png" class="header-img" alt="shopping cart icon">
+        </a>
+    </header>
+
+    <div class="category-page-wrapper">
+        <div class="category-header">
+            <div class="category-container">
+                <div class="back-btn-container">
+                    <a href="index.html">
+                        <div class="back-btn">
+                            <h1>&larr;</h1>
+                        </div>
+                    </a>
+                </div>
+                    <h2 class="category-title">Cart</h2>
+            </div>
+        </div>
+
+        <div class="select-time">
+            <h3 class="medium">Modify Order Time:</h3>
+            <p class= "asap medium"> ASAP</p>
+        </div>
+
+        <div class="category-item-container">
+            <div class="category-item-column column1">
+                <img src="graphics/photo-tacos__thai.png" alt="taco image" class="category-item-img"> 
+            </div>
+
+            <div class="category-item-column column2">
+                <p class="category-item-title">Thai Basil Chicken Taco</p>
+                <img src="graphics/quantity-button.png" class="quantity-button"  alt="quanity button">
+            </div>
+
+            <div class="category-item-column column3">
+                <img src="graphics/x-btn.png" alt="x button" class="category-item-btn">
+                <p class="category-item-price">$10.00</p>
+            </div>
+        </div>
+
+        <a href="index-2.html">
+            <button class = "add-more"> 
+                <span class="button-icon-container"><img src="graphics/Vectoradd-items.png" class=" button-icon" alt="add items icons" > </span>
+                <span class ='button-text'>Add Item</span>
+            </button>
+        </a>
+
+        <div class ="total"> 
+            <div class ="flex">
+                <div class="description"><p class="total-text">Subtotal</p></div>
+                <div class="price-cart"><p class="total-text">$10.00</p></div>
+            </div>
+            <div class ="flex">
+                <div class="description"><p class="total-text">Tax</p></div>
+                <div class="price-cart"><p class="total-text">$0.60</p></div>
+            </div>
+            <div class ="flex">
+                <div class="description"><p class="total-text">Total</p></div>
+                <div class="price-cart"><p class="total-text">$10.60</p></div>
+            </div>
+        </div>
+        <div>
+            <a href="payment.html">
+                <button class = "checkout"> 
+                    <span class ="checkout-text button-text">Checkout</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

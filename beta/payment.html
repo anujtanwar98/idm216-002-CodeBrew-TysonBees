@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyson Bees | Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="graphics/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="rewards.html"><li>Rewards</li></a>
+                <a href="order-history.html"><li>Order History</li></a>
+            </ul>
+            </div>
+        </nav>
+
+        <img src="graphics/logo.png" class="header-img" alt="Tyson Bees logo">
+        <img src="graphics/cart-icon.png" class="header-img" alt="shopping cart icon">
+    </header>
+
+    <div class="category-page-wrapper">
+        <div class="category-header">
+            <div class="category-container">
+                <div class="back-btn-container">
+                    <a href="cart.html">
+                        <div class="back-btn">
+                            <h1>&larr;</h1>
+                        </div>
+                    </a>
+                </div>
+                    <h2 class="category-title">Payment</h2>
+            </div>
+        </div>
+
+        <div class ="total total-payment"> 
+            <div class ="flex">
+                <div class="description description-thinner"><p class="total-text">Thai Basil Chicken Taco (2)</p></div>
+                <div class="price-cart description-thinner"><p class="total-text">$10.00</p></div>
+            </div>
+
+            <div class="dashed-line"></div>
+
+            <div class ="flex">
+                <div class="description"><p class="total-text">Subtotal</p></div>
+                <div class="price-cart"><p class="total-text">$10.00</p></div>
+            </div>
+            <div class ="flex">
+                <div class="description"><p class="total-text">Tax</p></div>
+                <div class="price-cart"><p class="total-text">$0.60</p></div>
+            </div>
+            <div class ="flex">
+                <div class="description"><p class="total-text">Total</p></div>
+                <div class="price-cart"><p class="total-text">$10.60</p></div>
+            </div>
+        </div>
+
+        
+
+        <div class="payment-container">
+            <h3 class="payment-title">Payment Options</h3>
+
+            <div class="payment-method">
+                <p class="payment-method-text">Venmo</p>
+                <img src="graphics/Vectorvenmo.png" class="payment-method-image" alt="venmo logo">
+            </div>
+        
+            <a href="payment-cash.html">
+                <div class="payment-method">
+                    <p class="payment-method-text">Pay Cash at Truck</p>
+                    <img src="graphics/mdi_cashcash.png" class="payment-method-image payment-cash" alt="cash image">
+                </div>
+            </a>
+        </div>
+        
+        <div>
+                <button class = "checkout checkout-disabled"> 
+                    <span class ='checkout-text button-text'>Complete Order</span>
+                </button>
+        </div>
+    </div>
+</body>
+</html>
