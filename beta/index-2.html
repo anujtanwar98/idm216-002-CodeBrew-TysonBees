@@ -6,29 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyson Bees | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="graphics/favicon.png">
 </head>
-<body>
-    <header>
-        <nav role="navigation">
-            <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="index.html"><li>Home</li></a>
-                <a href="rewards.html"><li>Rewards</li></a>
-                <a href="order-history.html"><li>Order History</li></a>
-            </ul>
-            </div>
-        </nav>
 
-        <img src="graphics/logo.png" class="header-img" alt="Tyson Bees logo">
-        <a href="cart.html">
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:#EFC372">
+        <div class="container-fluid" style="justify-content: space-around;">
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; box-shadow: none; outline:none";>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="margin-right: 0px;">
+            <img src="graphics/logo.png" alt="Logo" width="140" height="me-auto" class="d-inline-block align-text-center">
+          </a>
+
+          <a href="cart.html">
             <img src="graphics/cart-icon-2.png" class="header-img" alt="shopping cart icon">
         </a>
-    </header>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="rewards.html">Rewards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="order-history.html">Order History</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <div class="hours-container">
         <h4 class="hours-text"><span class="span-bold">open</span> until 5:00 P.M.</h4>
@@ -191,6 +203,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -6,52 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyson Bees | Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="graphics/favicon.png">
 </head>
 
 <body>
-    <div class="category-header">
-        <div class="category-container login-back-container">
-            <div class="back-btn-container">
-                <a href="cart.html">
-                    <div class="back-btn">
-                        <h1>&larr;</h1>
-                    </div>
-                </a>
-            </div>
+    <nav class="navbar navbar-expand-lg" style="background-color:#EFC372">
+        <div class="container-fluid" style="justify-content: space-around;">
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none; box-shadow: none; outline:none";>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="margin-right: 0px;">
+            <img src="graphics/logo.png" alt="Logo" width="140" height="me-auto" class="d-inline-block align-text-center">
+          </a>
+            <img src="graphics/cart-icon.png" class="header-img" alt="shopping cart icon">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="rewards.html">Rewards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="order-history.html">Order History</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </nav>
 
-    <img src="graphics/background-top.png" class="bg-top"  alt="honeycomb abckground"> 
-    <div class="branding-login">
-        <img src="graphics/logo-login.png" class="tb-logo" alt="tyson bees logo"> 
-        <img src="graphics/truck_loading.png" class="truck" alt="tyson bees truck image ">
-    </div>
-    
-    <div class="login-page">
-    <form action="#" class = 'login'>
-        <div class="usernameSec">
-            <h3><label class="login-subtitles" for="userName">Username:</label></h3>
-            <input class = "text-field-filled" type="text" id="userName" name="userName" value=" TysonBeesRocks"><br>
+    <div class="category-page-wrapper">
+        <!-- <img src="graphics/background-top.png" class="bg-top"  alt="honeycomb abckground">  -->
+        <div class="branding-login">
+            <img src="graphics/logo-login.png" class="tb-logo" alt="tyson bees logo"> 
+            <img src="graphics/truck_loading.png" class="truck" alt="tyson bees truck image ">
         </div>
         
-        <div class="passwordSec">
-            <h3><label class="login-subtitles" for="password">Password:</label></h3>
-        <input class = "text-field-filled" type="text" id="password" name="password" value="TysonBeesRocks!"><br>
+        <div class="login-page">
+        <form action="#" class = 'login'>
+            <div class="usernameSec">
+                <h3><label class="login-subtitles" for="userName">Username:</label></h3>
+                <input class = "text-field-filled" type="text" id="userName" name="userName" ><br>
+            </div>
+            
+            <div class="passwordSec">
+                <h3><label class="login-subtitles" for="password">Password:</label></h3>
+            <input class = "text-field-filled" type="password" id="password" name="password" ><br>
+            </div>
+        </form> 
+        
+        <h3 class = 'forgot-password'>Forgot Password?</h3>
+        
+        
+        <a href="index-loggedin.html">
+            <div class = 'login-center login'>
+                <button class = 'login-button-filled'><h3 class="button-text">Log In</h3></button>
+            </div>
+        </a>
+
+        <a href="index-loggedin.html">
+        <div class="signup-center"><button class = 'signup-button'><h3 class="button-text">Sign Up</h3></button></div>
+        </a>
+        <!-- <img src="graphics/background-bottom.png" class="bg-bottom" alt="background bee hive image"> -->
         </div>
-    </form> 
-    
-    <h3 class = 'forgot-password'>Forgot Password?</h3>
-    
-    
-    <a href="payment.html">
-        <div class = 'login-center login'>
-            <button class = 'login-button-filled'><h3 class="button-text">Log In</h3></button>
-        </div>
-    </a>
-    <div class="signup-center"><button class = 'signup-button'><h3 class="button-text">Sign Up</h3></button></div>
-    
-    <img src="graphics/background-bottom.png" class="bg-bottom" alt="background bee hive image">
     </div>
-    </body>
-    </html>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
