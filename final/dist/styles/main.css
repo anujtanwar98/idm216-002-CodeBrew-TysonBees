@@ -167,7 +167,7 @@
     column-gap: 10px;
     padding: 20px;
 }
-.wlecome-main-title {
+.welcome-main-title {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -176,6 +176,7 @@
     justify-content: center;
     align-items: top;
     flex-wrap: wrap;
+    padding-top: 40px;
 }
 .hero-btn {
     height: 69.56px;
@@ -202,7 +203,7 @@
 .login-btn {
     border-color: var(--ter-color);
     background-color: var(--sec-color);
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     box-shadow: none;
     transition: box-shadow 0.3s ease;
 }
@@ -431,3 +432,238 @@
 }
 
 /* login page end */
+
+
+
+
+/* category items start */
+
+.menu-row-wrapper {
+    margin-bottom: 48px;
+}
+
+.menu-container {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-title {
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-row-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-row__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    align-items: center;
+    width: 148px;
+    margin: auto 16px;
+}
+
+.menu-row-img {
+    display: flex;
+    align-items: center;
+    width: 148px;
+    flex-direction: column;
+}
+
+.icon-hexagon {
+    z-index: 3;
+    position: absolute;
+
+    width: 93.29px;
+    height: 93.29px;
+
+    margin: 0 auto;
+
+    top: -40px;
+}
+
+.menu-row-btn {
+    width: 160px;
+    height: 72px;
+    display: flex;
+
+    border-radius: 12px;
+    border: 1px solid var(--main-color);
+    background-color: white;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu-row-name {
+    margin: auto auto 4px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+/* category item end */
+
+
+
+
+
+
+/* individuaal menu items start  */
+
+.category-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.category-page-wrapper {
+    margin: 32px 24px;
+}
+
+.back-btn {
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn-arrow {
+    margin: 0;
+}
+
+.back-btn-container {
+    /* width: 48px;
+    height: 48px; */
+    padding-left: 16px;
+    z-index: 5;
+}
+
+.category-title {
+    color: var(--main-color);
+    font-weight: 600;
+    margin-left: -64px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.category-item-container {
+    border-radius: 30px;
+    background-color: var(--ter-color);
+    border: 1px solid var(--sec-color);
+    margin: 16px auto;
+
+    display: flex;
+    flex-direction: row;
+
+    max-width: 380px;
+}
+
+.category-item-img {
+    /* width: 113.57px;
+    height: 104.16px; */
+    height: 90%;
+    max-height: 119px;
+}
+
+.category-item-imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item-flexprice {
+    float: right;
+    margin-bottom: 0;
+}
+
+.category-item-flexrow {
+    display: flex;
+    flex-direction: row;
+    margin-right: 32px;
+
+    justify-content: space-between;
+}
+
+.category-item-row {
+    margin-right: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-item-flexcolumn {
+    float: right;
+}
+
+
+/* .category-item-flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-item-flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.category-item-flexprice {
+    float: right;
+} */
+
+.category-item-title {
+    font-weight: 700;
+    color: var(--black-color);
+    margin-top: 16px;
+}
+
+.category-item-details {
+    font-weight: 500;
+    color: var(--grey-color);
+    text-decoration: underline;
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-right: 8px;
+}
+
+.category-cart {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-right: 8px;
+}
+
+.category-item-price {
+    margin-top: 32px;
+    /* float: right; */
+    color: var(--black-color);
+}
+
+.category-item-btn {
+    height: 32px;
+    width: 32px;
+    margin-top: 16px;
+    /* float: right; */
+    margin-left: 16px;
+    /* margin-right: 32px; */
+    cursor: pointer;
+}
+
+/* Individual meni item end */

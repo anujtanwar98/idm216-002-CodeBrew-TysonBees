@@ -17,13 +17,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
       <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/menu.php">Menu</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/rewards.php">Rewards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/contact.php">Contact</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/order-history.php.php">Order History</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
