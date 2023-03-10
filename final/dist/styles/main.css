@@ -14,6 +14,17 @@
     --grey-color: #7C7C7C;
 }
 
+/* main to manage screen start */
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* main to manage screen end */
+
+/* navbar start */
 
 .navbar-toggler {
     width: 30px;
@@ -96,6 +107,60 @@
     cursor: pointer;
     color: var(--main-color);
 }
+
+.cart-title {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.total{
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 16px;
+    max-width: 312px;
+    display: flex;
+    flex-direction: column;
+    margin: 96px auto 32px;
+}
+
+.price-cart {
+    font-weight: 400;
+    text-align: right;
+    color: var(--black-color);
+}
+    
+.flex {
+    display: flex;
+    justify-content:space-between;
+}
+
+.description{
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.checkout{
+    height: 54px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto;
+}
+
+.checkout-text{
+    color:var(--white-color);
+    font-weight: 600;
+    text-align: center;
+}
+
 
 /* shopping cart end */
 
@@ -667,3 +732,191 @@
 }
 
 /* Individual meni item end */
+
+
+
+/* overlay start */
+
+.overlay {
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.close-btn-container {
+    float: right;
+    padding: 8px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.food-img-overlay {
+    z-index: 3;
+    margin-bottom: -108px;
+    display: flex;
+}
+
+.yellow-overlay {
+    background-color: var(--ter-color);
+    color: black;
+    padding-top: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    border-radius: 20px 20px 0 0;
+    max-width: 380px;
+}
+
+.overlay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yellow-overlay-container {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+.special-instructions {
+    /* height: 126.17px; */
+    width: 320px;
+}
+
+.add-order-btn {
+    width: 279px;
+    height: 54px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.overlay-quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.overlay-subtitle-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.overlay-quantity {
+    margin: 0 24px;
+    font-weight: 400;
+}
+
+.overlay-total {
+    float: left;
+    /* margin-left: 124px; */
+}
+
+.overlay-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.overlay-btn {
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    height: 23.83px;
+    width: 26.41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.overlay-text {
+    margin: 8px 0;
+}
+
+.overlay-subtitle {
+    font-weight: 600;
+}
+
+.notes-input-subs {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--grey-color);
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    background-color: #FFF1D9;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.quantity-input:hover {
+    border: 2px solid #463A6C;
+}
+
+
+.quantity-container button {
+    background-color: #FFF1D9;
+    color: #463A6C;
+    border: 2px solid #463A6C;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.quantity-container button:active {
+    transform: scale(0.95);
+}
+
+.quantity-container button.increment {
+    margin-left: 10px;
+}
+
+.quantity-container button:hover {
+    background-color: #463A6C;
+    color: #FFF1D9;
+}
+
+.quantity-container button.increment:active {
+    box-shadow: 0 0 10px #463A6C;
+}
+
+.quantity-container button.decrement:active {
+    box-shadow: 0 0 10px #463A6C;
+}
+
+/* overlay end */

@@ -25,4 +25,5 @@ $document_title = $page_title . ' | ' . $site_title; // Home | Tyson Bees
     <link rel="stylesheet" href="<?php echo site_url(); ?>/dist/styles/main.css">
 </head>
 <body>
+    <main>
     

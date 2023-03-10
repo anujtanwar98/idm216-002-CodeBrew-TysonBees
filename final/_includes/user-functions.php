@@ -36,18 +36,18 @@ function add_user($first_name, $last_name, $email, $password)
  * @param integer $id
  * @return Array or false
  */
-function get_user_by_id($id)
-{
-    global $db_connection;
-    $query = "SELECT * FROM users WHERE id = $id";
-    $result = mysqli_query($db_connection, $query);
-    if ($result->num_rows > 0) {
-        $user = mysqli_fetch_assoc($result);
-        return $user;
-    } else {
-        return false;
-    }
-}
+// function get_user_by_id($id)
+// {
+//     global $db_connection;
+//     $query = "SELECT * FROM users WHERE id = $id";
+//     $result = mysqli_query($db_connection, $query);
+//     if ($result->num_rows > 0) {
+//         $user = mysqli_fetch_assoc($result);
+//         return $user;
+//     } else {
+//         return false;
+//     }
+// }
 
 
 function verify_password($password)
@@ -78,3 +78,46 @@ function get_user_by_email_and_password($email, $password)
         return false;
     }
 }
+
+function create_guest_user(){
+    global $db_connection;
+    $query = 'INSERT INTO users';
+    $query .= ' (guest)';
+    $query .= " VALUES ('1')";
+    $result = mysqli_query($db_connection, $query);
+    if ($result) {
+        $recentId = $db_connection->insert_id;
+        get_user_by_id($recentId);
+        // Create a user array in the SESSION variable and assign values to it
+    }
+         
+}
+
+
+function get_user_by_id($id)
+{
+    global $db_connection;
+    
+    $query = "SELECT * FROM users WHERE id = '$id'";
+    
+    $result = mysqli_query($db_connection, $query);
+    if ($result->num_rows > 0) {
+        $user = mysqli_fetch_assoc($result);
+        $_SESSION['user'] = [
+            'id' => $user['id'],
+        ];
+        return $user;
+    }
+    create_guest_user();
+}
+
+function delete_user_by_id($id)
+{
+    global $db_connection;
+    $query = "DELETE FROM users WHERE id = {$id}";
+    $result = mysqli_query($db_connection, $query);
+    return $result;
+}
+
+
+?>

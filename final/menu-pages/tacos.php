@@ -14,12 +14,12 @@ include_once __DIR__ . '/../_components/header.php';
 ?>
 
 <?php
-
+$site_url = site_url();
  echo "<div class='category-page-wrapper'>";
  echo "<div class='category-header'>";
  echo "<div class='category-container'>";
  echo "<div class='back-btn-container'>";
- echo "<a class='text-decoration-none' href='../index.php'>";
+ echo "<a class='text-decoration-none' href='{$site_url}/index.php'>";
  echo "<div class='back-btn'>";
  echo "<i class='fas fa-arrow-left back-btn-arrow'></i>";
  echo "</div>";
@@ -48,12 +48,17 @@ include_once __DIR__ . '/../_components/header.php';
      echo "</a>";
      echo "<span class='category-item-flexprice'>" . price_with_dollar_sign($menu_item['price']) . "</span>";
      echo "</p>";
+     echo "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal-{$menu_item['id']}'>Click for details</button>";
      echo "</div>";
      echo "</div>";
+     
+     include __DIR__ . '/../menu-item-modal.php';
  }
  
  echo "</div>";
 ?>
+
+<?php include_once __DIR__ . '/../_components/footer.php'; ?>
 
 
 

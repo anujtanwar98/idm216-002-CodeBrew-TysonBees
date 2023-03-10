@@ -1,4 +1,5 @@
 
+</main>
 
 <footer class="main-footer">
   <div class="footer-image">

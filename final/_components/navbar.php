@@ -29,15 +29,15 @@
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
         </li>
         <?php 
-        if (is_user_logged_in()) {
-          echo '<li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="' . site_url() . '/auth/logout.php">Logout</a>
-        </li>';
-        } else {
-          echo '<li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="' . site_url() . '/auth/login.php">Login</a>
-        </li>';
-        }
+        // if (is_user_logged_in()) {
+        //   echo '<li class="nav-item">
+        //   <a class="nav-link active" aria-current="page" href="' . site_url() . '/auth/logout.php">Logout</a>
+        // </li>';
+        // } else {
+        //   echo '<li class="nav-item">
+        //   <a class="nav-link active" aria-current="page" href="' . site_url() . '/auth/login.php">Login</a>
+        // </li>';
+        // }
         ?>
       </ul>
     </div>
