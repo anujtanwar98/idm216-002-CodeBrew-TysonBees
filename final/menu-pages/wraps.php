@@ -30,32 +30,26 @@ $site_url = site_url();
  echo "</div>";
  
  while ($menu_item = mysqli_fetch_assoc($result)) {
-     // Display each item as a card or tile
-     echo "<div class='category-item-container'>";
-     echo "<div class='category-item-imgcontainer'>";
-     echo "<img src='" . $menu_item['images'] . "' alt='" . $menu_item['name'] . "'  class='category-item-img'> ";
-     echo "</div>";
+    // Display each item as a card or tile
+   echo "<div data-bs-toggle='modal' data-bs-target='#exampleModal-{$menu_item['id']}'>";
+   echo" <div class='my-food-item-container'>";
+   echo"<div class='my-food-image'>";
+   echo"<img src='" . $menu_item['images'] . "' alt='" . $menu_item['name'] . "'  class='category-item-img'>";
+   echo"</div>";
+   echo"<div class='col-md-8 my-food-item-details'>";
+   echo"<div class='my-food-item-name'>";
+   echo"<p>" . $menu_item['name'] ."</p>";
+   echo"</div>";
+   echo"<div class='col-md-6 my-food-item-price'>";
+   echo"<p class='my-food-item-price-value'>" . price_with_dollar_sign($menu_item['price']) . "</p>";
+   echo"</div>";
+   echo"</div>";
+   echo"</div>";
+   echo "</div>";
+    
+    include __DIR__ . '/../menu-item-modal.php';
+}
 
-     echo "<div class='category-item-flexcolumn'>";
-     echo "<div class='category-item-flexrow'>";
-     echo "<p class='category-item-title'>" . $menu_item['name'] ."</p>";
-     echo "<i class='fas fa-plus category-item-btn'></i>";
-     echo "</div>";
-
-     echo "<p class='category-item-row'>";
-     echo "<a href='{$site_url}/menu-item-show.php?id={$menu_item['id']}'>";
-     echo "<span class='category-item-details'>Click for details</span>";
-     echo "</a>";
-     echo "<span class='category-item-flexprice'>" . price_with_dollar_sign($menu_item['price']) . "</span>";
-     echo "</p>";
-     echo "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal-{$menu_item['id']}'>Click for details</button>";
-     echo "</div>";
-     echo "</div>";
-     
-     include __DIR__ . '/../menu-item-modal.php';
- }
- 
- echo "</div>";
 ?>
 
 <?php include_once __DIR__ . '/../_components/footer.php'; ?>

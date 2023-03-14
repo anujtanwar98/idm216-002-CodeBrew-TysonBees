@@ -24,7 +24,7 @@ if ($newUser) {
         'id' => $newUser['id'],
     ];
     
-    redirect_to('/index.php');
+    redirect_to('/payment.php');
 } else {
     $error_message = 'User was not updated: ' . mysqli_error($db_connection);
     redirect_to('/auth/login?error=' . $error_message);

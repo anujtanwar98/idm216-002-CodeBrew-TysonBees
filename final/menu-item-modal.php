@@ -12,7 +12,7 @@ include_once __DIR__ . '/_components/header.php';
       </div> -->
       <form class="modal-content modalBackground" action="<?php echo site_url() . '/_includes/addToCart.php'?>" method="POST">
       <div class="overlay">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         <section class="overlay-container">
           <img class="food-img-overlay" src="<?php echo $menu_item['images']?>" alt="food image overlay" height="281px">
           <div class="yellow-overlay-container">

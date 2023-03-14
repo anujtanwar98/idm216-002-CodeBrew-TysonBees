@@ -41,3 +41,5 @@ $cart = getAllCartItems($userOrder['id']);
     </a>
   </div>
 </div>
+
+<?php include_once __DIR__ . '/_components/footer.php'; ?>

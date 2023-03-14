@@ -6,6 +6,7 @@
 
 :root{
     --main-color: #463A6C;
+    --purple-medium: #C0BCD3;
     --sec-color: #EFC372;
     --ter-color: #FFF1D9;
     --fourth-color: #FFFCF7;
@@ -25,6 +26,23 @@ main {
 /* main to manage screen end */
 
 /* navbar start */
+
+.my-desk-nav {
+    display:none
+}
+.my-desk-nav-items {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+    .my-desk-nav {
+        display: block;
+    }
+    .my-mob-nav {
+        display: none;
+    }
+}
 
 .navbar-toggler {
     width: 30px;
@@ -161,6 +179,11 @@ main {
     text-align: center;
 }
 
+.dashed-line {
+    border-bottom: 1px dashed var(--grey-color);
+    margin: 4px 0;
+}
+
 
 /* shopping cart end */
 
@@ -176,6 +199,16 @@ main {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+}
+@media screen and (min-width: 700px) {
+    .hours span  {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 994px) {
+    .hours span  {
+        font-size: 2rem;
+    }
 }
 .hours img {
     width: 100%;
@@ -222,6 +255,8 @@ main {
     max-width: 500px;
 }
 
+
+
 .button-links-home {
     display: flex;
     justify-content: center;
@@ -239,9 +274,9 @@ main {
     color: var(--white-color);
     display: flex;
     justify-content: center;
-    align-items: top;
+    /* align-items: top; */
     flex-wrap: wrap;
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 .hero-btn {
     height: 69.56px;
@@ -507,6 +542,23 @@ main {
     margin-bottom: 48px;
 }
 
+.menu-desktop-wrapper {
+    margin-bottom: 48px;
+}
+.menu-desktop-wrapper {
+    display: none;
+}
+
+@media screen and (min-width: 994px) {
+    .menu-desktop-wrapper {
+        display: block;
+    }
+    .menu-row-wrapper {
+        display: none;
+    }
+    
+}
+
 .menu-container {
     margin: 32px;
     display: flex;
@@ -575,6 +627,26 @@ main {
     margin: auto auto 4px;
     font-weight: 600;
     color: var(--main-color);
+}
+
+
+.menu-desk-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.menu-desk__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    align-items: center;
+    width: 148px;
+    margin: auto 16px;
 }
 
 /* category item end */
@@ -717,7 +789,6 @@ main {
 
 .category-item-price {
     margin-top: 32px;
-    /* float: right; */
     color: var(--black-color);
 }
 
@@ -725,13 +796,131 @@ main {
     height: 32px;
     width: 32px;
     margin-top: 16px;
-    /* float: right; */
     margin-left: 16px;
-    /* margin-right: 32px; */
     cursor: pointer;
 }
 
-/* Individual meni item end */
+
+
+
+
+.my-food-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 16px 0;
+    border-radius: 30px;
+    background-color: var(--ter-color);
+    border: 1px solid var(--sec-color);
+    margin: 16px auto;
+    max-width: 400px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.my-food-item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.my-food-item-name {
+    display: flex;
+    flex-direction: row;
+    margin-right: 32px;
+    justify-content: space-between;
+    font-weight: 700;
+    color: var(--black-color);
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+
+.my-food-item-price {
+    font-family: inter;
+    font-weight: 500;
+    color: var(--black-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+}
+.my-food-item-price-value {
+    font-family: inter;
+    font-weight: 500;
+    color: var(--black-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+}
+
+
+
+
+
+
+.my-food-display-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.my-food-desktop-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+    border-radius: 30px;
+    background-color: var(--ter-color);
+    border: 1px solid var(--sec-color);
+    max-width: 380px;
+    min-width: 380px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+
+.desktop-categories-show {
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+
+.desktop-categories-show {
+    display: none;
+}
+
+@media screen and (min-width: 994px) {
+    .desktop-categories-show {
+        display: block;
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+}
+
+.my-food-desk-title-image {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    /* max-width: 200px; */
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.my-food-icons-images {
+    max-width: 60px;
+}
+
+/* Individual menu item end */
 
 
 
@@ -848,6 +1037,7 @@ main {
     margin: 8px 0;
 }
 
+
 .overlay-subtitle {
     font-weight: 600;
 }
@@ -919,4 +1109,180 @@ main {
     box-shadow: 0 0 10px #463A6C;
 }
 
+.btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
 /* overlay end */
+
+
+
+/* rewards start */
+
+.rewards-title {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.truck-rewards-image {
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.my-rewards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: var(--fourth-color);
+    /* padding: 20px; */
+}
+
+
+/* rewards end */
+
+
+/* payment start */
+
+.payment-title {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.my-payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: var(--fourth-color);
+    /* padding: 20px; */
+}
+
+/* .payment-container {
+    margin-bottom: 32px;
+} */
+
+.payment-method-selected {
+    background-color: var(--purple-dark);
+}
+
+.payment-method-text-selected {
+    color: white;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #463A6C;
+    border-radius: 10px;
+    padding: 8px;
+    max-width: 312px;
+    margin: 24px auto;
+    cursor: pointer;
+  }
+  
+  .payment-method-selected {
+    color: white;
+    background-color: #463A6C;
+  }
+  
+  .payment-method-text {
+    margin: auto 24px;
+    float: left;
+    color: black;
+  }
+  
+  .payment-method-image {
+    float: right;
+    width: 30px;
+    margin: auto 24px;
+  }
+
+.payment-page-title {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+    text-align: center;
+}
+.checkout-disabled {
+    background-color: var(--main-color);
+}
+#complete-order {
+    background-color: var(--purple-medium);
+}
+#complete-order:enabled {
+    background-color: var(--main-color);
+}
+.payment-method-enable {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* payment end */
+
+.payment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.payment-option {
+    border: none;
+    color: var(--black-color);
+    background-color: var(--purple-medium);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+.payment-option.light {
+    background-color: var(--purple-medium);
+    color: var(--grey-color);
+}
+
+.payment-option.selected {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.complete-order-button {
+    margin: 10px;
+}
+
+.payment-method-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    max-width: 312px;
+    width:200px;
+    height: 60px;
+    margin: 24px auto;
+    cursor: pointer;
+}
+
+.buttons-logo-venmo-cash {
+    width: 30px;
+    margin: auto 0;
+}
+  
