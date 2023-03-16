@@ -32,7 +32,7 @@ include_once __DIR__ . '/_components/header.php';
               <div class="overlay-btns">
                 <div class="quantity-container">
                   <button class="decrement">-</button>
-                  <input onkeydown="return false" type="number" class="quantity-input" value="1">
+                  <input onkeydown="return false" type="number" class="quantity-input" value="1" name="quantity">
                   <button class="increment">+</button>
                 </div>
               </div>
@@ -49,7 +49,7 @@ include_once __DIR__ . '/_components/header.php';
       </div>
       <input value="<?php echo $userOrder['id']; ?>" name="order_id" type="hidden">
       <input value="<?php echo $menu_item['id']; ?>" name="menu_item_id" type="hidden">
-      <input value="1" name="quantity" type="hidden">
+      <!-- <input name="quantity" type="hidden"> -->
       </form>
   </div>
 </div>
