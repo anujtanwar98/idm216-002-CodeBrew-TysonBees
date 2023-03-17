@@ -1,3 +1,10 @@
+<?php
+$cart = getAllCartItems($userOrder['id']);
+if ($cart-> num_rows > 0) {
+  echo "success";
+}
+?>
+
 <nav class="navbar navbar-expand-lg my-mob-nav" style="background-color:#EFC372">
   <div class="container-fluid">
     <!-- <a class="navbar-brand" href="<?php echo site_url(); ?>/index.php">
@@ -28,7 +35,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
         </li>
-        <?php 
+        <?php
         // if (is_user_logged_in()) {
         //   echo '<li class="nav-item">
         //   <a class="nav-link active" aria-current="page" href="' . site_url() . '/auth/logout.php">Logout</a>
