@@ -3,6 +3,7 @@ include_once __DIR__ . '/app.php';
 include_once __DIR__ . '/_components/header.php';
 ?>
 
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal-<?php echo $menu_item['id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -34,10 +35,20 @@ include_once __DIR__ . '/_components/header.php';
                   <button class="decrement">-</button>
                   <input onkeydown="return false" type="number" class="quantity-input" value="1" name="quantity">
                   <button class="increment">+</button>
+                  <style>
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                    }
+                    input[type=number] {
+                      -moz-appearance: textfield;
+                    }
+                  </style>
                 </div>
               </div>
                 <div class="overlay-total">
-                    <p class="overlay-text">Total: $5.00</p>
+                    <!-- <p class="overlay-text">$5.00</p> -->
                 </div>
               </div>
               <button class="add-order-btn">

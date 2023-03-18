@@ -26,28 +26,123 @@ while ($result = mysqli_fetch_array($cart)) {
         <?php $title = 'Payment';?>
         <h1 class="text-center payment-page-title"><?php echo $title; ?></h1>
     </div>
-    <div class ="total total-payment"> 
-      <div class ="flex">
-          <div class="description description-thinner"><p class="total-text">Thai Basil Chicken Taco (2)</p></div>
-          <div class="price-cart description-thinner"><p class="total-text">$10.00</p></div>
-      </div>
+    <div class="payment-order-summary">
+        <h2>Order Summary</h2>
+        <?php
+        $cart = getAllCartItems($userOrder['id']);
+        while ($result = mysqli_fetch_array($cart)) {
+            $item_name = $result['name'];
+            $item_price = price_with_dollar_sign($result['price'] * $result['quantity']);
+        ?>
+        <div class="payment-item payment-item-dotted">
+            <span class="payment-item-name"><?php echo $item_name; ?></span>
+            <span class="payment-item-price"><?php echo $item_price; ?></span>
+        </div>
+        <?php
+        }
+        ?>
+        <hr class="payment-my-line">
+        <div class="payment-subtotal">
+            <span>Subtotal:</span>
+            <span><?php echo price_with_dollar_sign($total_price); ?></span>
+        </div>
+        <div class="payment-tax">
+            <span>Tax:</span>
+            <span><?php echo price_with_dollar_sign($tax_cal); ?></span>
+        </div>
+        <div class="payment-total">
+            <span>Total:</span>
+            <span><?php echo price_with_dollar_sign($total_price_tax); ?></span>
+        </div>
+    </div>
 
-      <div class="dashed-line"></div>
+    <!-- <div class="desk-payment-order-summary">
+        <h2>Order Summary</h2>
+        <?php
+        // $cart = getAllCartItems($userOrder['id']);
+        // while ($result = mysqli_fetch_array($cart)) {
+        //     $item_name = $result['name'];
+        //     $item_price = price_with_dollar_sign($result['price'] * $result['quantity']);
+        ?>
+        <div class="desk-payment-item desk-payment-item-dotted">
+            <span class="desk-payment-item-name"><?php echo $item_name; ?></span>
+            <span class="desk-payment-item-price"><?php echo $item_price; ?></span>
+        </div>
+        <?php
+        // }
+        ?>
+        <hr class="desk-payment-my-line">
+        <div class="desk-payment-subtotal">
+            <span>Subtotal:</span>
+            <span><?php echo price_with_dollar_sign($total_price); ?></span>
+        </div>
+        <div class="desk-payment-tax">
+            <span>Tax:</span>
+            <span><?php echo price_with_dollar_sign($tax_cal); ?></span>
+        </div>
+        <div class="desk-payment-total">
+            <span>Total:</span>
+            <span><?php echo price_with_dollar_sign($total_price_tax); ?></span>
+        </div>
+    </div> -->
 
-      <div class ="flex">
-          <div class="description"><p class="total-text">Subtotal:</p></div>
-          <div class="price-cart"><p class="total-text"><?php echo price_with_dollar_sign($total_price); ?></p></div>
-      </div>
-      <div class ="flex">
-          <div class="description"><p class="total-text">Tax</p></div>
-          <div class="price-cart"><p class="total-text"><?php echo price_with_dollar_sign($tax_cal); ?></p></div>
-      </div>
-      <div class ="flex">
-          <div class="description"><p class="total-text">Total</p></div>
-          <div class="price-cart"><p class="total-text"><?php echo price_with_dollar_sign($total_price_tax); ?></p></div>
-      </div>
-  </div>
-  <div class="payment-container" role="group">
+
+    <div class="payment-screen-main-container">
+        <div class="desktop-payment-order-summary">
+            <h2>Order Summary</h2>
+            <?php
+            $cart = getAllCartItems($userOrder['id']);
+            while ($result = mysqli_fetch_array($cart)) {
+                $item_name = $result['name'];
+                $item_price = price_with_dollar_sign($result['price'] * $result['quantity']);
+            ?>
+            <div class="desk-payment-item desk-payment-item-dotted">
+                <span class="desk-payment-item-name"><?php echo $item_name; ?></span>
+                <span class="desk-payment-item-price"><?php echo $item_price; ?></span>
+            </div>
+            <?php
+            }
+            ?>
+                <hr class="desk-payment-my-line">
+            <div class="desk-payment-subtotal">
+                <span>Subtotal:</span>
+                <span><?php echo price_with_dollar_sign($total_price); ?></span>
+            </div>
+            <div class="desk-payment-tax">
+                <span>Tax:</span>
+                <span><?php echo price_with_dollar_sign($tax_cal); ?></span>
+            </div>
+            <div class="desk-payment-total">
+                <span>Total:</span>
+                <span><?php echo price_with_dollar_sign($total_price_tax); ?></span>
+            </div>
+        </div>
+        <div class="payment-screen-payment-selection" role="group">
+            <h3 class="desktop-payment-title">Payment Options</h3>
+            <button type="button" id="payment-venmo" class="payment-option payment-method-buttons active">
+            Venmo
+            <img src="<?php echo site_url(); ?>/dist/images/venmo.png" class="buttons-logo-venmo-cash" alt="venmo logo">
+            </button>
+            <button type="button" id="payment-cash" class="payment-option payment-method-buttons">
+            Pay Cash at Truck
+                <img src="<?php echo site_url(); ?>/dist/images/cash.png" class="buttons-logo-venmo-cash" alt="cash image">
+            </button>
+            <form class="" action="<?php echo site_url();?>/_includes/orderArchive.php" method="POST">
+                <input type="hidden" name="order_id" value="<?php echo $userOrder['id']; ?>">
+                <input type="hidden" name="total_price_tax" value="<?php echo $total_price_tax; ?>">
+                <div class="complete-order-button">
+                    <!-- <button button id="complete-order" class="btn btn-success checkout checkout-disabled" disabled> 
+                        <span class ='checkout-text button-text'>Complete Order</span>
+                    </button> -->
+                    <button type="submit" id="complete-order" class="checkout checkout-disabled checkout-enabled" disabled>Complete Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="payment-container" role="group">
         <h3 class="payment-title">Payment Options</h3>
         <!-- <button id="payment-venmo" type="button" class="btn btn-light active payment-method my-payment-btn payment-method-enable">
             <p class="payment-method-text">Venmo</p>

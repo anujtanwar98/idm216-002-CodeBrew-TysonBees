@@ -1,10 +1,3 @@
-<?php
-$cart = getAllCartItems($userOrder['id']);
-if ($cart-> num_rows > 0) {
-  echo "success";
-}
-?>
-
 <nav class="navbar navbar-expand-lg my-mob-nav" style="background-color:#EFC372">
   <div class="container-fluid">
     <!-- <a class="navbar-brand" href="<?php echo site_url(); ?>/index.php">
@@ -19,7 +12,14 @@ if ($cart-> num_rows > 0) {
       <img src="<?php echo site_url(); ?>/dist/images/logo.png" alt="Logo" width="140" height="me-auto" class="d-inline-block align-text-center">
     </a>
     <a href="<?php echo site_url(); ?>/cart.php">
-      <i class="fas fa-shopping-cart fa-2x shopping-cart"></i>
+      <?php
+        $cart = getAllCartItems($userOrder['id']);
+        if ($cart->num_rows > 0) {
+          echo '<i class="fas fa-shopping-cart fa-2x shopping-cart"><div class="red-dot"></div></i>';
+        } else {
+          echo '<i class="fas fa-shopping-cart fa-2x shopping-cart"></i>';
+        }
+        ?>
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -45,7 +45,7 @@ if ($cart-> num_rows > 0) {
         //   <a class="nav-link active" aria-current="page" href="' . site_url() . '/auth/login.php">Login</a>
         // </li>';
         // }
-        ?>
+        ?> 
       </ul>
     </div>
   </div>
@@ -79,7 +79,24 @@ if ($cart-> num_rows > 0) {
           </ul>
         </div>
         <a href="<?php echo site_url(); ?>/cart.php">
-          <i class="fas fa-shopping-cart fa-2x shopping-cart"></i>
+          <?php
+          $cart = getAllCartItems($userOrder['id']);
+          if ($cart->num_rows > 0) {
+            echo '<i class="fas fa-shopping-cart fa-2x shopping-cart"><div class="red-dot"></div></i>';
+          } else {
+            echo '<i class="fas fa-shopping-cart fa-2x shopping-cart"></i>';
+          }
+          ?>
         </a>
       </div>
     </nav>
+
+
+    <?php
+    // $cart = getAllCartItems($userOrder['id']);
+    // if ($cart-> num_rows > 0) {
+    //   echo "<div class='red-dot'></div>";
+    // }
+    ?>
+
+    

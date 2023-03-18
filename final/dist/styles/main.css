@@ -1176,7 +1176,8 @@ main {
 /* payment start */
 
 .payment-title {
-    font-size: 2rem;
+    margin: 20px 0 0 0;
+    font-size: 1.25rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: var(--main-color);
@@ -1500,7 +1501,7 @@ main {
         text-align: center;
         max-width: 350px;
         width: 350px;
-        margin: 0 20px;
+        margin: 0 20px 20px 20px;
       }
       
       .desk-cart-summary h2 {
@@ -1533,3 +1534,205 @@ main {
   
 
 /* cart items design ends */
+
+
+/* payment summary start */
+
+.red-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+
+.payment-order-summary {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.payment-order-summary h2 {
+    margin-top: 0;
+}
+
+.payment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.payment-item-name {
+    font-family: poppins;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.payment-subtotal, .payment-tax, .payment-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.payment-price {
+    text-align: right;
+    font-family: poppins;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.payment-subtotal span:first-child,
+.payment-tax span:first-child,
+.payment-total span:first-child {
+    font-weight: bold;
+}
+
+.payment-subtotal span:last-child,
+.payment-tax span:last-child,
+.payment-total span:last-child {
+    text-align: right;
+}
+
+.payment-my-line {
+    border-top: 2px dashed var(--main-color);
+}
+.desk-payment-order-summary {
+    display: none;
+}
+.payment-screen-main-container {
+    display: none;
+}
+
+
+@media screen and (min-width: 994px) {
+    .payment-order-summary {
+        display: none;
+    }
+    .desk-payment-order-summary {
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .desk-payment-order-summary h2 {
+        margin-top: 0;
+    }
+    
+    .desk-payment-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .desk-payment-item-name {
+        font-family: poppins;
+        font-weight: 500;
+        color: var(--main-color);
+    }
+    
+    .desk-payment-subtotal, .desk-payment-tax, .desk-payment-total {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .desk-payment-price {
+        text-align: right;
+        font-family: poppins;
+        font-weight: 500;
+        color: var(--main-color);
+    }
+    
+    .desk-payment-subtotal span:first-child,
+    .desk-payment-tax span:first-child,
+    .desk-payment-total span:first-child {
+        font-weight: bold;
+    }
+    
+    .desk-payment-subtotal span:last-child,
+    .desk-payment-tax span:last-child,
+    .desk-payment-total span:last-child {
+        text-align: right;
+    }
+    
+    .desk-payment-my-line {
+        border-top: 2px dashed var(--main-color);
+    }
+    
+    .page-title-container {
+        margin: 20px 0;
+    }
+
+
+
+
+
+    .payment-screen-main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+      
+      .desktop-payment-order-summary {
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 20px;
+        width: 70%;
+        text-align: center;
+      }
+      
+      .desktop-payment-order-summary h2 {
+        margin-top: 0;
+      }
+      
+      .desktop-payment-order-summary .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      
+      .desktop-payment-order-summary .subtotal {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+        padding-top: 10px;
+        font-weight: bold;
+      }
+      
+      .payment-screen-payment-selection {
+        width: 30%;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .desktop-payment-title {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: var(--main-color);
+        text-align: center;
+    }
+    .payment-container {
+        display: none;
+    }
+
+
+}
+
+
+/* payment-summary end */
