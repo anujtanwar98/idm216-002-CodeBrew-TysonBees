@@ -47,6 +47,7 @@ $cart = getAllCartItems($userOrder['id']);
     <h1 class="text-center cart-title"><?php echo $title; ?></h1>
   </div>
 
+
 <div class="desk-cart-container">
   <div class="desk-cart-items">
     <?php include_once __DIR__ . '/_components/cartItems.php'; ?>

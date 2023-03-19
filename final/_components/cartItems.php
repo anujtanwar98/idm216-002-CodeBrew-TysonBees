@@ -44,7 +44,11 @@ while ($result = mysqli_fetch_array($cart)) {
     echo"<p class='product-name'>" . $result['name'] ."</p>";
     echo "<form action='{$site_url}/_includes/delete_cart_item.php' method='POST''>";
     echo"<input name='cart' value=". $result ['cart_item_id'] . " type='hidden'>";
-    echo"<button type='submit' class='fas fa-trash-alt cart-delete-button category-item-btn'></button>";
+    // echo"<button type='submit' class='fas fa-trash-alt cart-delete-button category-item-btn'></button>";
+    echo"<button type='submit' class='destop-delete-wrapper'>";
+    echo"<div class='lid'></div>";
+    echo"<div class='can'></div>";
+    echo"</button>";
     echo"</form>";
     echo"</div>";
     echo"<div class='product-footer'>";
@@ -67,7 +71,11 @@ while ($result = mysqli_fetch_array($cart)) {
     echo"<p class='desk-product-name'>" . $result['name'] ."</p>";
     echo "<form action='{$site_url}/_includes/delete_cart_item.php' method='POST''>";
     echo"<input name='cart' value=". $result ['cart_item_id'] . " type='hidden'>";
-    echo"<button type='submit' class='fas fa-trash-alt cart-delete-button category-item-btn'></button>";
+    // echo"<button type='submit' class='fas fa-trash-alt cart-delete-button category-item-btn'></button>";
+    echo"<button type='submit' class='destop-delete-wrapper'>";
+    echo"<div class='lid'></div>";
+    echo"<div class='can'></div>";
+    echo"</button>";
     echo"</form>";
     echo"</div>";
     echo"<div class='desk-product-footer'>";

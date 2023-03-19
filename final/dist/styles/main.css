@@ -257,6 +257,28 @@ main {
     object-position: center;
     max-width: 500px;
 }
+.welcome-destop-main-title-container {
+    display: none;
+}
+@media screen and (min-width: 500px) {
+    .card-honey {
+       display: none;
+    }
+    .welcome-destop-main-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-color);
+        border-radius: 0;
+    }
+    .welcome-destop-main-title {
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: var(--white-color);
+    }
+    
+}
 
 
 
@@ -636,7 +658,7 @@ main {
 .menu-desk-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 
     flex-direction: row;
@@ -924,6 +946,7 @@ main {
         display: block;
         margin: 0 auto;
         max-width: 1500px;
+        padding: 0 10px;
     }
 }
 
@@ -937,6 +960,7 @@ main {
     margin-right: 16px;
 }
 .my-food-icons-images {
+    padding: 0 0 0 10px;
     max-width: 60px;
 }
 
@@ -2045,12 +2069,15 @@ main {
 
 .order-history-item-food-name {
     font-size: 1rem;
-    font-weight: bold;
+    font-family: poppins;
+    font-weight: 600;
     text-align: left;
 }
 
 .order-history-item-food-price {
     font-size: 1rem;
+    font-family: poppins;
+    font-weight: 500;
     text-align: right;
 }
 
@@ -2063,16 +2090,110 @@ main {
 }
 
 .order-history-item-total-text {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 600;
     text-align: left;
 }
 
 .order-history-item-total-price {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 500;
     text-align: right;
 }
   
 
 /* order historty screen end */
+
+
+/* delete button update start */
+
+.destop-delete-wrapper{
+    position: relative;
+    cursor: pointer;
+  }
+  .lid{
+    position: relative;
+    top: 2px;
+    width: 24px;
+    height: 6px;
+    background: #FFF1D9;
+    border: solid 2px #463A6C;
+    transition: all .2s ease-in-out;
+    transform-origin: left;
+    transform: rotate(0deg) translateY(0px);
+  }
+  .lid:before,
+  .lid:after{
+    content: '';
+    position: absolute;
+  }
+  .lid:before{
+    width: 10px;
+    height: 5px;
+    top: -5px;
+    left: 5px;
+    background: #463A6C;
+  }
+  .lid:after{
+    width: 6px;
+    height: 4px;
+    top: -3px;
+    left: 7px;
+    background: #FFF1D9;
+  }
+  .can{
+    position: relative;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: #FFF1D9;
+    border: solid 2px #463A6C;
+    border-radius: 0 0 3px 3px;
+  }
+  .can:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    box-shadow: 4px 5px 0px 1px #463A6C,
+      4px 7px 0px 1px #463A6C,
+      4px 9px 0px 1px #463A6C,
+      4px 11px 0px 1px #463A6C,
+      4px 13px 0px 1px #463A6C,
+      8px 5px 0px 1px #463A6C,
+      8px 7px 0px 1px #463A6C,
+      8px 9px 0px 1px #463A6C,
+      8px 11px 0px 1px #463A6C,
+      8px 13px 0px 1px #463A6C,
+      12px 5px 0px 1px #463A6C,
+      12px 7px 0px 1px #463A6C,
+      12px 9px 0px 1px #463A6C,
+      12px 11px 0px 1px #463A6C,
+      12px 13px 0px 1px #463A6C;
+  }
+  /* input{
+    display: none;
+  } */
+  .destop-delete-wrapper{
+    background-color: #EFC372;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .destop-delete-wrapper:hover .lid{
+    transform: rotate(-30deg) translateY(-2px);
+  }
+
+/* delete button update end */
+
+
+
+
+/* cart time selection start */
+
+  
+
+/* cart time selection end */

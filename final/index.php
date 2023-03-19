@@ -17,7 +17,7 @@ include_once __DIR__ . '/_components/header.php';
     <img src="<?php echo site_url(); ?>/dist/images/filter.png" width="40" height="me-auto" alt="">
   </div>
 </div> -->
-<div class="d-flex card card-honey">
+<div class=" card card-honey">
   <div class="honey-comb-back">
     <img src="<?php echo site_url(); ?>/dist/images/honeycomb-hero.png" width="500" height="me-auto" alt="">
     <!-- class="card-img d-inline-block align-text-center" -->
@@ -40,6 +40,9 @@ include_once __DIR__ . '/_components/header.php';
       </button>
     </a> -->
   </div>
+</div>
+<div class="welcome-destop-main-title-container">
+    <h1 class="welcome-destop-main-title">Welcome to Tyson Bees</h1>
 </div>
 
 <div class="menu-container">

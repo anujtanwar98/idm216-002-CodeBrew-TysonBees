@@ -9,6 +9,11 @@ $order_items = getOrderItems($user['id']);
 
 
 ?>
+<?php
+    date_default_timezone_set("America/New_York");
+    $current_time = date("h:i A");
+    $pick_up_time = date("h:i A", strtotime('+10 minutes'));
+?>
 
 
 <?php
@@ -22,7 +27,7 @@ while ($item = mysqli_fetch_array($order_items)) {
 if($item['items_ordered']!= null){
     // var_dump($item['items_ordered']);
     echo " 
-<div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
+    <div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
         <h1 class='big-text text-center my-0'>
             <strong>Order= {$item['id']}
             </strong>
@@ -34,9 +39,7 @@ if($item['items_ordered']!= null){
         <div class='d-flex flex-row justify-content-between align-items-center mb-2'>
             <p>PICKUP TIME</p>
             <p>
-                <strong>
-                
-                </strong>
+                <strong>{$pick_up_time}</strong>
             </p>
         </div>
         
@@ -55,7 +58,7 @@ if($item['items_ordered']!= null){
                 <div class='order-history-item-total'>
                     <div class='order-history-item-total-text'>Total</div>
                     <div class='order-history-item-total-price'>
-                        <div class='order-history-item-total-price-text'>{$item['final_total']}</div>
+                        <div class='order-history-item-total-price-text'>". price_with_dollar_sign($item['final_total']) ."</div>
                     </div>
             </div>
         </div>
