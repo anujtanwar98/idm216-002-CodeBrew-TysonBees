@@ -32,9 +32,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/order-history.php">Order History</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
-        </li>
+        </li> -->
         <?php
         // if (is_user_logged_in()) {
         //   echo '<li class="nav-item">
@@ -73,9 +73,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/order-history.php">Order History</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
-            </li>          
+            </li>           -->
           </ul>
         </div>
         <a href="<?php echo site_url(); ?>/cart.php">
