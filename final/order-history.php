@@ -29,7 +29,7 @@ if($item['items_ordered']!= null){
     echo " 
     <div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
         <h1 class='big-text text-center my-0'>
-            <strong>Order= {$item['id']}
+            <strong>Order Number= {$item['id']}
             </strong>
         </h1>
         <p class='text-center mb-2'> Status: <strong class='green'>{$item['status']}</strong> </p>

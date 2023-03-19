@@ -1632,6 +1632,19 @@ main {
     display: none;
 }
 .payment-screen-main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.desktop-payment-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--main-color);
+    text-align: center;
+}
+.desktop-payment-order-summary {
     display: none;
 }
 
@@ -1705,6 +1718,7 @@ main {
     .payment-screen-main-container {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         max-width: 1500px;
         margin: 0 auto;

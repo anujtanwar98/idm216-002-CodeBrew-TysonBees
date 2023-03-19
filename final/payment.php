@@ -142,17 +142,8 @@ while ($result = mysqli_fetch_array($cart)) {
 
 
 
-    <div class="payment-container" role="group">
+    <!-- <div class="payment-container" role="group">
         <h3 class="payment-title">Payment Options</h3>
-        <!-- <button id="payment-venmo" type="button" class="btn btn-light active payment-method my-payment-btn payment-method-enable">
-            <p class="payment-method-text">Venmo</p>
-            <img src="<?php echo site_url(); ?>/dist/images/vectorvenmo.png" class="payment-method-image" alt="venmo logo">
-        </button>
-
-        <button id="payment-cash" type="button" class=" btn btn-light payment-method my-payment-btn payment-method-enable">
-            <p class="payment-method-text">Pay Cash at Truck</p>
-            <img src="<?php echo site_url(); ?>/dist/images/mdi_cashcash.png" class="payment-method-image payment-cash" alt="cash image">
-        </button> -->
         <button type="button" id="payment-venmo" class="payment-option payment-method-buttons active">
             Venmo
             <img src="<?php echo site_url(); ?>/dist/images/venmo.png" class="buttons-logo-venmo-cash" alt="venmo logo">
@@ -165,13 +156,10 @@ while ($result = mysqli_fetch_array($cart)) {
             <input type="hidden" name="order_id" value="<?php echo $userOrder['id']; ?>">
             <input type="hidden" name="total_price_tax" value="<?php echo $total_price_tax; ?>">
             <div class="complete-order-button">
-                <!-- <button button id="complete-order" class="btn btn-success checkout checkout-disabled" disabled> 
-                    <span class ='checkout-text button-text'>Complete Order</span>
-                </button> -->
                 <button type="submit" id="complete-order" class="checkout checkout-disabled checkout-enabled" disabled>Complete Order</button>
             </div>
         </form>
-    </div>
+    </div> -->
 </div>
 
 
