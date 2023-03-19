@@ -13,7 +13,7 @@ $total_price_tax = sanitize_value($_POST['total_price_tax']);
     // die;
     $result = mysqli_query($db_connection, $query);
     if ($result){
-        redirect_to('/order-history.php');   
+        redirect_to('/order-confirmation.php');   
     } else{
         redirect_to('/payment.php');
     }

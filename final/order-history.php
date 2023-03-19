@@ -20,27 +20,60 @@ while ($item = mysqli_fetch_array($order_items)) {
 //     var_dump($item);
 // die;
 if($item['items_ordered']!= null){
-    var_dump($item['items_ordered']);
+    // var_dump($item['items_ordered']);
     echo " 
 <div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
-        <h1 class='big-text text-center my-0'>Order #123456</h1>
+        <h1 class='big-text text-center my-0'>
+            <strong>Order= {$item['id']}
+            </strong>
+        </h1>
         <p class='text-center mb-2'> Status: <strong class='green'>{$item['status']}</strong> </p>
 
         <div class='heading-border d-flex justify-content-between mb-3'></div>
 
         <div class='d-flex flex-row justify-content-between align-items-center mb-2'>
             <p>PICKUP TIME</p>
-            <p>12:30pm</p>
+            <p>
+                <strong>
+                
+                </strong>
+            </p>
         </div>
+        
+
+        <div class='order-history-item-box'>
+            <div class='order-history-item-order-number'>Order= {$item['id']}</div>
+                <hr>
+                <div class='order-history-item-food'>
+                    <div class='order-history-item-food-name'>
+                        <div class='order-history-item-food-name-text'>{$item['items_ordered']}</div>
+                    </div>
+                    <div class='order-history-item-food-price'>
+                    </div>
+                </div>
+                <hr>
+                <div class='order-history-item-total'>
+                    <div class='order-history-item-total-text'>Total</div>
+                    <div class='order-history-item-total-price'>
+                        <div class='order-history-item-total-price-text'>{$item['final_total']}</div>
+                    </div>
+            </div>
+        </div>
+
+
         <div class='d-flex flex-row justify-content-between align-items-center mb-2'>
             
         </div>";
-        // include __DIR__ . '/../_components/orderConfirmationItem.php';
+        // include __DIR__ . '/_components/orderConfirm.php';
         echo "
-        <button onclick='' type='button' class='btn btn-primary p-2'>View QR Code</button>
+        
     </div>
+    
     ";
 }}?>
+
+
+
 
 
 

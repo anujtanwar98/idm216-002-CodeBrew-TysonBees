@@ -1237,11 +1237,12 @@ main {
   }
 
 .payment-page-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: var(--main-color);
     text-align: center;
+    margin: 20px 0;
 }
 .checkout-disabled {
     background-color: var(--main-color);
@@ -1721,7 +1722,7 @@ main {
         padding: 20px;
     }
     .desktop-payment-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         color: var(--main-color);
@@ -1736,3 +1737,342 @@ main {
 
 
 /* payment-summary end */
+
+/* order confirm screen start */
+
+.tracking-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--purple-medium);
+}
+
+@media only screen and (max-width: 400px) {
+    .tracking-box {
+        max-width: 400px;
+    }
+}
+
+.tracking-box-progress-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--purple-medium);
+    border: 1px solid var(--black-color);
+    position: relative;
+}
+
+.tracking-box-progress-bar:before {
+    content: "";
+    display: block;
+    height: 100%;
+    background-color: var(--main-color);
+    border: 1px solid var(--black-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+    width: 50%;
+}
+
+.tracking-box-progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.tracking-box-received-time {
+    flex: 1;
+    text-align: left;
+}
+
+.tracking-box-pick-up-time {
+    flex: 1;
+    text-align: right;
+}
+.order-confirm-page-truck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.order-confirm-truck-rewards-image {
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.order-confirm-location-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+  
+.order-confirm-location-box h2 {
+    margin-top: 0;
+}
+  
+.order-confirm-location-box p {
+    margin-bottom: 20px;
+}
+  
+.order-confirm-back-home-btn {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    max-width: 200px;
+    font-family: poppins;
+}
+  
+@media screen and (max-width: 800px) {
+    .order-confirm-location-box {
+      max-width: 100%;
+    }
+}
+
+.desktop-order-confirm-container {
+    display: none;
+}
+.desktop-order-confirm-truck-image-main {
+    display: none;
+}
+.desktop-order-confirm-back-home-btn {
+    display: none;
+}
+
+@media screen and (min-width: 994px) {
+    .mobile-order-confirm-container {
+        display: none;
+    }
+    .desktop-order-confirm-container {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .desktop-order-confirm-left-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+    
+    .desktop-order-confirm-order-info {
+        text-align: center;
+    }
+    
+    .desktop-order-confirm-progress-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 auto;
+        background-color: var(--purple-medium);
+        border-radius: 20px;
+        position: relative;
+        width: 100%;
+        height: 140px;
+    }
+    
+    .desktop-order-confirm-progress-bar-track {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40%;
+        transform: translateY(-50%);
+        height: 10px;
+        background-color: var(--purple-medium);
+        border: 1px solid var(--black-color);
+        border-radius: 20px;
+        height: 21px;
+        align-items: center;
+    }
+    
+    .desktop-order-confirm-progress-bar-fill {
+        height: 100%;
+        width: 50%;
+        height: 20px;
+        background-color: var(--main-color);
+        border: 1px solid var(--black-color);
+        border-radius: 20px;
+        position: absolute;
+    }
+    
+    
+    .desktop-order-confirm-progress-bar-time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+    }
+    
+    .desktop-order-confirm-truck-image {
+        /* position: absolute; */
+        /* bottom: 0; */
+        max-width: 400px;
+        width: 300px;
+    }
+    .desktop-order-confirm-truck-image-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .desktop-order-confirm-right-box {
+        width: 30%;
+        margin: 0 20px;
+    }
+    
+    .desktop-order-confirm-food-truck-info {
+        text-align: center;
+    }
+    #desk-order-number {
+        font-size: 1.25rem;
+    }
+    .desktop-order-confirm-back-home-btn {
+        display: block;
+        padding: 0 0 30px 0;
+    }
+    
+}
+  
+  
+  
+
+/* order confirm screen end */
+
+
+/* order historty screen start */
+
+.order-history-item-box {
+    border: 1px solid var(--sec-color);
+    border-radius: 20px;
+    background-color: var(--ter-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    .order-history-item-box {
+        border: 1px solid var(--sec-color);
+        border-radius: 20px;
+        background-color: var(--ter-color);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin: 0 auto;
+    }    
+}
+
+@media screen and (min-width: 994px) {
+    .order-history-item-box {
+        border: 1px solid var(--sec-color);
+        border-radius: 20px;
+        background-color: var(--ter-color);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 800px;
+        margin: 0 auto;
+    }    
+}
+
+@media screen and (min-width: 700px) {
+    .order-history-item-box {
+        border: 1px solid var(--sec-color);
+        border-radius: 20px;
+        background-color: var(--ter-color);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        margin: 0 auto;
+    }    
+}
+
+.order-history-item-order-number {
+    font-size: 1.25rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.order-history-item-food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.order-history-item-food-name {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.order-history-item-food-price {
+    font-size: 1rem;
+    text-align: right;
+}
+
+.order-history-item-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.order-history-item-total-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.order-history-item-total-price {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+  
+
+/* order historty screen end */
