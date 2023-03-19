@@ -45,7 +45,7 @@ while ($result = mysqli_fetch_array($cart)) {
     echo "<form action='{$site_url}/_includes/delete_cart_item.php' method='POST''>";
     echo"<input name='cart' value=". $result ['cart_item_id'] . " type='hidden'>";
     // echo"<button type='submit' class='fas fa-trash-alt cart-delete-button category-item-btn'></button>";
-    echo"<button type='submit' class='destop-delete-wrapper'>";
+    echo"<button type='submit' class='desktop-delete-wrapper'>";
     echo"<div class='lid'></div>";
     echo"<div class='can'></div>";
     echo"</button>";
@@ -72,7 +72,7 @@ while ($result = mysqli_fetch_array($cart)) {
     echo "<form action='{$site_url}/_includes/delete_cart_item.php' method='POST''>";
     echo"<input name='cart' value=". $result ['cart_item_id'] . " type='hidden'>";
     // echo"<button type='submit' class='fas fa-trash-alt cart-delete-button category-item-btn'></button>";
-    echo"<button type='submit' class='destop-delete-wrapper'>";
+    echo"<button type='submit' class='desktop-delete-wrapper'>";
     echo"<div class='lid'></div>";
     echo"<div class='can'></div>";
     echo"</button>";
