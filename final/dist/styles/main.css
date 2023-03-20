@@ -2265,12 +2265,12 @@ main {
   /* input{
     display: none;
   } */
-  .destop-delete-wrapper{
+  .desktop-delete-wrapper{
     background-color: #EFC372;
     padding: 10px;
     border-radius: 50%;
   }
-  .destop-delete-wrapper:hover .lid{
+  .desktop-delete-wrapper:hover .lid{
     transform: rotate(-30deg) translateY(-2px);
   }
 
