@@ -7,8 +7,14 @@ include_once __DIR__ . '/_components/header.php';
 
 <?php 
 $order_items = getOrderItems($user['id']);
-// $order_id = "";
+$order_id = "";
 ?>
+<?php
+                $site_url = site_url();
+            while ($item = mysqli_fetch_array($order_items)) {
+                $order_id = $item['id'];
+            }
+                ?>
 
 <div>
     <div class="page-title-container">
@@ -18,12 +24,13 @@ $order_items = getOrderItems($user['id']);
     <div class="mobile-order-confirm-container">
         <div class="order-number-text">
             <h1 class="text-center">
-            Order Number: 123456
+            <!-- Order Number: 123456 -->
             <?php
             //     $site_url = site_url();
             // while ($item = mysqli_fetch_array($order_items)) {
             //     $order_id = $item['id'];
             //     echo "Order Number: $order_id";
+            echo "Order Number: $order_id"
             // }
                 ?>
             </h1>
@@ -60,7 +67,7 @@ $order_items = getOrderItems($user['id']);
                 <h2>Tyson Bees Truck</h2>
             </div>
             <p>13260 Spruce St., Philadelphia, PA 19104</p>
-            <a href="<?php echo site_url(); ?>/index.php" class="order-confirm-back-home-btn">Back to Home</a>
+            <a href="<?php echo site_url(); ?>/order-history.php" class="order-confirm-back-home-btn">Check Order History</a>
         </div>
     </div>
 
@@ -72,10 +79,12 @@ $order_items = getOrderItems($user['id']);
             <div class="desktop-order-confirm-order-info">
                 <h2>Order Confirmation</h2>
                 <p><span id="desk-order-number">
-                Order Number: 123456
+                <!-- Order Number: 123456 -->
+                <strong>
                 <?php
-                // echo "Order Number: $order_id"
+                echo "Order Number: $order_id"
                 ?>
+                </strong>
                 </span></p>
             </div>
             <div class="desktop-order-confirm-progress-bar">
@@ -115,7 +124,7 @@ $order_items = getOrderItems($user['id']);
         </div>
     </div>
     <div class="desktop-order-confirm-back-home-btn">
-        <a href="<?php echo site_url(); ?>/index.php" class="order-confirm-back-home-btn">Back to Home</a>
+        <a href="<?php echo site_url(); ?>/order-history.php" class="order-confirm-back-home-btn">Check Order History</a>
     </div>
 </div>
 
