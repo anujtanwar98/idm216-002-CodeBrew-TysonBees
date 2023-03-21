@@ -15,7 +15,10 @@ $order_items = getOrderItems($user['id']);
     $pick_up_time = date("h:i A", strtotime('+10 minutes'));
 ?>
 
-
+<div class="page-title-container">
+    <?php $title = 'Order History';?>
+    <h1 class="text-center cart-title"><?php echo $title; ?></h1>
+  </div>
 <?php
     $site_url = site_url();
     // $total_price=0;
@@ -32,14 +35,14 @@ if($item['items_ordered']!= null){
             <strong>Order Number= {$item['id']}
             </strong>
         </h1>
-        <p class='text-center mb-2'> Status: <strong class='green'>{$item['status']}</strong> </p>
+        <p class='text-center mb-2'><strong class='green'>Status:</strong> {$item['status']}</p>
 
         <div class='heading-border d-flex justify-content-between mb-3'></div>
 
         <div class='d-flex flex-row justify-content-between align-items-center mb-2'>
-            <p>PICKUP TIME</p>
+            <p><strong>PICKUP TIME</strong></p>
             <p>
-                <strong>{$pick_up_time}</strong>
+                {$pick_up_time}
             </p>
         </div>
         

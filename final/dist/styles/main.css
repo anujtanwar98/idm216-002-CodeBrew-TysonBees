@@ -34,6 +34,15 @@ main {
     max-width: 1500px;
     margin: 0 auto;
 }
+.nav-link-color {
+    color: var(--main-color);
+}
+.nav-item-hover:hover {
+    background-color: var(--ter-color);
+    color: var(--main-color);
+    transition: background-color .3s ease-in-out;
+    border-radius: 10px;
+}
 
 @media screen and (min-width: 992px) {
     .my-desk-nav {
@@ -279,6 +288,7 @@ main {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         color: var(--white-color);
+        margin: 20px;
     }
     
 }
@@ -604,6 +614,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media screen and (min-width: 994px) {
+    .menu-title {
+        font-weight: 600;
+        color: var(--main-color);
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .menu-row-container {

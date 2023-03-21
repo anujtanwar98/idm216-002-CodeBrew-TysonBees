@@ -24,16 +24,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
       <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/index.php">Menu</a>
+          <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/index.php">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/rewards.php">Rewards</a>
+          <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/rewards.php">Rewards</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/order-history.php">Order History</a>
+          <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/order-history.php">Order History</a>
         </li>
         <!-- <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
+          <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
         </li> -->
         <?php
         // if (is_user_logged_in()) {
@@ -64,17 +64,17 @@
         </button>
         <div class='collapse navbar-collapse' id='navbarNav'>
           <ul class='navbar-nav ms-auto'>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/index.php">Menu</a>
+            <li class="nav-item nav-item-hover">
+              <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/index.php">Menu</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/rewards.php">Rewards</a>
+            <li class="nav-item nav-item-hover">
+              <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/rewards.php">Rewards</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/order-history.php">Order History</a>
+            <li class="nav-item nav-item-hover">
+              <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/order-history.php">Order History</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
+            <!-- <li class="nav-item nav-item-hover">
+              <a class="nav-link active nav-link-color" aria-current="page" href="<?php echo site_url(); ?>/admin/menu/main.php">Admin</a>
             </li>           -->
           </ul>
         </div>

@@ -44,6 +44,16 @@ include_once __DIR__ . '/_components/header.php';
 <div class="welcome-destop-main-title-container">
     <h1 class="welcome-destop-main-title">Welcome to Tyson Bees</h1>
 </div>
+<?php 
+// $order_items = getOrderItems($user['id']);
+// $site_url = site_url();
+// while ($item = mysqli_fetch_array($order_items)) {
+//     if ($item["status"]= "completed"){
+//     echo"hello";
+// } else {
+//     echo "<div></div>";
+// }}
+?>
 
 <div class="menu-container">
         <h2 class="menu-title">Our Menu Categories</h2>
