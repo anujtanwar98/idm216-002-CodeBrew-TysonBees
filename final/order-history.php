@@ -49,7 +49,7 @@ if($item['items_ordered']!= null){
 
         <div class='order-history-item-box'>
             <div class='total-paid'>
-            <p><strong>TOTAL PAID:</strong>". price_with_dollar_sign($item['final_total']) ."</p>
+            <p><strong>TOTAL PAID:</strong> ". price_with_dollar_sign($item['final_total']) ."</p>
             </div>
                 <hr>";
                 include __DIR__ . '/_components/orderConfirm.php';
