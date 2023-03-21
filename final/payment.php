@@ -6,6 +6,7 @@ include_once __DIR__ . '/_components/header.php';
 <?php include_once __DIR__ . '/_components/navbar.php'; ?>
 
 <?php
+($user['guest']==0) ? "success": redirect_to('/auth/login.php') ;
 $cart = getAllCartItems($userOrder['id']);
 ?>
 

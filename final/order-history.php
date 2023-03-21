@@ -25,7 +25,7 @@ while ($item = mysqli_fetch_array($order_items)) {
 //     var_dump($item);
 // die;
 if($item['items_ordered']!= null){
-    // var_dump($item['items_ordered']);
+    // var_dump($item);
     echo " 
     <div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
         <h1 class='big-text text-center my-0'>
@@ -46,20 +46,16 @@ if($item['items_ordered']!= null){
 
         <div class='order-history-item-box'>
             <div class='order-history-item-order-number'>Order= {$item['id']}</div>
+            <div class='total-paid'>
+            <p><strong>TOTAL PAID:</strong>". price_with_dollar_sign($item['final_total']) ."</p>
+            </div>
+                <hr>";
+                include __DIR__ . '/_components/orderConfirm.php';
+                // var_dump($item);
+                echo"
+                
                 <hr>
-                <div class='order-history-item-food'>
-                    <div class='order-history-item-food-name'>
-                        <div class='order-history-item-food-name-text'>{$item['items_ordered']}</div>
-                    </div>
-                    <div class='order-history-item-food-price'>
-                    </div>
-                </div>
-                <hr>
-                <div class='order-history-item-total'>
-                    <div class='order-history-item-total-text'>Total</div>
-                    <div class='order-history-item-total-price'>
-                        <div class='order-history-item-total-price-text'>". price_with_dollar_sign($item['final_total']) ."</div>
-                    </div>
+                
             </div>
         </div>
 

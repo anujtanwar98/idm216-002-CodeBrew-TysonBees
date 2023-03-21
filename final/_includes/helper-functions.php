@@ -129,8 +129,8 @@ function getOrderItems($userId){
     LEFT JOIN menu ON cart.menu_item_id = menu.id
     WHERE orders.user_id = '{$userId}' AND orders.status = 'completed'
     GROUP BY orders.id;";
-    // var_dump($query);
-    // die;
+    
     $result = mysqli_query($db_connection, $query);
+    // print_r($result);
     return $result;
 }
