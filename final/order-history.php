@@ -32,8 +32,8 @@ if($item['items_ordered']!= null){
     echo " 
     <div class='container-b mx-auto py-3 px-4 mb-4 d-flex flex-column' >
         <h1 class='big-text text-center my-0'>
-            <strong>Order Number= {$item['id']}
-            </strong>
+            <strong>Order Number:</strong> {$item['id']}
+            
         </h1>
         <p class='text-center mb-2'><strong class='green'>Status:</strong> {$item['status']}</p>
 
@@ -48,7 +48,6 @@ if($item['items_ordered']!= null){
         
 
         <div class='order-history-item-box'>
-            <div class='order-history-item-order-number'>Order= {$item['id']}</div>
             <div class='total-paid'>
             <p><strong>TOTAL PAID:</strong>". price_with_dollar_sign($item['final_total']) ."</p>
             </div>

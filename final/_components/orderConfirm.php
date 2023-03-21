@@ -23,7 +23,11 @@ if ($str != null)
         <div class='order-history-item-food'>
         <div class='order-history-item-food-name'>
             <div class='order-history-item-food-name-text'>
-            {$meals[$i]} {$quantities[$i]} 
+            Name:{$meals[$i]} 
+            <br>
+            <span class='order-history-item-food-name-text-quantity'>
+            Quantity: {$quantities[$i]} 
+            </span>
             </div>
         </div>
             <div class='order-history-item-food-price'>

@@ -2214,6 +2214,12 @@ main {
     font-weight: 500;
     text-align: right;
 }
+.order-history-item-food-name-text-quantity {
+    font-size: .75rem;
+    font-family: poppins;
+    font-weight: 500;
+    text-align: left;
+}
   
 
 /* order historty screen end */
