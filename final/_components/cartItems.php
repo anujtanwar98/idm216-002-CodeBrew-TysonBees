@@ -52,9 +52,9 @@ while ($result = mysqli_fetch_array($cart)) {
     echo"</form>";
     echo"</div>";
     echo"<div class='product-footer'>";
-    echo "<button class='decrement cart-minus-button'>-</button>";
+    // echo "<button class='decrement cart-minus-button'>-</button>";
     echo"<input onkeydown='return false' type='number' class='product-quantity' value=". $result ['quantity'] . ">";
-    echo "<button class='increment cart-plus-button'>+</button>";
+    // echo "<button class='increment cart-plus-button'>+</button>";
     echo"<span class='product-price'>". price_with_dollar_sign($result['price']) ."</span>";
     echo"</div>";
     echo"</div>";
@@ -79,9 +79,9 @@ while ($result = mysqli_fetch_array($cart)) {
     echo"</form>";
     echo"</div>";
     echo"<div class='desk-product-footer'>";
-    echo "<button class='decrement cart-minus-button'>-</button>";
+    // echo "<button class='decrement cart-minus-button'>-</button>";
     echo"<input onkeydown='return false' type='number' class='product-quantity' value=". $result ['quantity'] . ">";
-    echo "<button class='increment cart-plus-button'>+</button>";
+    // echo "<button class='increment cart-plus-button'>+</button>";
     echo"<span class='desk-product-price'>". price_with_dollar_sign($result['price']) ."</span>";
     echo"</div>";
     echo"</div>";
@@ -90,4 +90,14 @@ while ($result = mysqli_fetch_array($cart)) {
 }
 
 ?>
+<style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+</style>
 
