@@ -9,7 +9,7 @@ include_once __DIR__ . '/../_components/header.php';
     <img sticky="top" class="honey-comb-image-top" src="<?php echo site_url(); ?>/dist/images/login-top-honey.png" width="500" height="me-auto" alt="">
   </div>
   <div class='back-btn-container payment-page-back'>
-        <a class='text-decoration-none' href='<?php echo site_url()?> /cart.php'>
+        <a class='text-decoration-none' href='<?php echo site_url()?>/cart.php'>
             <div class='back-btn'>
                 <i class='fas fa-arrow-left back-btn-arrow'></i>
             </div>
