@@ -68,6 +68,11 @@ $cart = getAllCartItems($userOrder['id']);
         <td><?php echo price_with_dollar_sign($total_price_tax); ?></td>
       </tr>
     </table>
+    <a href="<?php echo site_url(); ?>/index.php" class="text-decoration-none">
+        <button class = "add-item"> 
+            <span class ="add-text button-text">+ Add Item</span>
+        </button>
+    </a>
     <a href="<?php echo site_url(); ?>/payment.php" class="text-decoration-none">
         <button class = "checkout"> 
             <span class ="checkout-text button-text">Checkout</span>
@@ -91,6 +96,11 @@ $cart = getAllCartItems($userOrder['id']);
     </div>
   </div>
   <div class="phone-check-button">
+  <a href="<?php echo site_url(); ?>/index.php" class="text-decoration-none">
+        <button class = "add-item"> 
+            <span class ="add-text button-text">+ Add Item</span>
+        </button>
+    </a>
     <a href="<?php echo site_url(); ?>/payment.php" class="text-decoration-none">
         <button class = "checkout"> 
             <span class ="checkout-text button-text">Checkout</span>

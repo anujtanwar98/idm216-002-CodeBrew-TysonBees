@@ -8,6 +8,13 @@ include_once __DIR__ . '/../_components/header.php';
   <div class="honey-comb-image-top-container">
     <img sticky="top" class="honey-comb-image-top" src="<?php echo site_url(); ?>/dist/images/login-top-honey.png" width="500" height="me-auto" alt="">
   </div>
+  <div class='back-btn-container payment-page-back'>
+        <a class='text-decoration-none' href='<?php echo site_url()?> /auth/login.php'>
+            <div class='back-btn'>
+                <i class='fas fa-arrow-left back-btn-arrow'></i>
+            </div>
+        </a>
+    </div>
   <div class="login-page-honey-title">
     <img src="<?php echo site_url(); ?>/dist/images/logo.png" alt="Logo" width="260" height="me-auto" class="d-inline-block align-text-center">
   </div>
