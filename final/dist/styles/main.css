@@ -216,7 +216,7 @@ main {
     color: var(--white-color);
     border: 3px solid var(--main-color);
     border-radius: 30px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 40px 10px 40px;
     outline: none;
     display: flex;
     align-items: center;
@@ -228,7 +228,7 @@ main {
     color: var(--white-color);
     border: 3px solid var(--main-color);
     border-radius: 30px;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 42px 10px 42px;
     outline: none;
     display: flex;
     align-items: center;
@@ -499,6 +499,14 @@ main {
     object-fit: cover;
     object-position: center;
     max-width: 500px;
+}
+@media screen and (min-width: 500px) {
+    .honey-comb-image-top {
+        display: none;
+    }
+    .honey-comb-image-bottom {
+        display: none;
+    }
 }
 
 .truck-image {
@@ -1232,6 +1240,9 @@ main {
     border: none;
     font-size: 2rem;
     transition: color 0.3s ease;
+}
+.modal-header {
+    border-bottom: none;
 }
 
 /* overlay end */

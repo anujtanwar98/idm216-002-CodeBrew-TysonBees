@@ -24,6 +24,11 @@ include_once __DIR__ . '/../_components/header.php';
   </div>
   <div class="login-form-container">
     <form method="POST" action="<?php echo site_url() . '/_includes/process-login.php' ?>">
+    <?php 
+    $errorMessage = isset($_GET['error']) ? $_GET['error'] : false;
+    if ($errorMessage){
+        echo $errorMessage;}
+    ?>
       <div class="mb-3">
         <label class="email-title" for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1 email-input-subs" aria-describedby="emailHelp" placeholder="email" required name="email">

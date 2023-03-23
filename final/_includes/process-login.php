@@ -26,6 +26,6 @@ if ($newUser) {
     
     redirect_to('/payment.php');
 } else {
-    $error_message = 'User was not updated: ' . mysqli_error($db_connection);
-    redirect_to('/auth/login?error=' . $error_message);
+    $error_message = 'user does not exist or password is incorrect ' . mysqli_error($db_connection);
+    redirect_to('/auth/login.php?error=' . $error_message);
 }

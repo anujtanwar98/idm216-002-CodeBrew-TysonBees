@@ -23,6 +23,11 @@ include_once __DIR__ . '/../_components/header.php';
     <img class="truck-image" src="<?php echo site_url(); ?>/dist/images/truck-loading.png" width="400" height="me-auto" alt="">
   </div>
   <div class="login-form-container">
+  <?php 
+    $errorMessage = isset($_GET['error']) ? $_GET['error'] : false;
+    if ($errorMessage){
+        echo $errorMessage;}
+    ?>
     <form method="POST" action="<?php echo site_url() . '/_includes/process-create-users.php' ?>">
         <div class="mb-3">
             <label class="email-title" for="" class="form-label">First Name</label>
