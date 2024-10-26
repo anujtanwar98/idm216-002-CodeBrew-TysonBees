@@ -28,7 +28,7 @@ while ($result = mysqli_fetch_array($cart)) {
         <h1 class="text-center payment-page-title"><?php echo $title; ?></h1>
     </div>
     <div class='back-btn-container payment-page-back'>
-        <a class='text-decoration-none' href='<?php echo site_url()?> /cart.php'>
+        <a class='text-decoration-none' href='<?php echo site_url()?>/cart.php'>
             <div class='back-btn'>
                 <i class='fas fa-arrow-left back-btn-arrow'></i>
             </div>
